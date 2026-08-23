@@ -1,42 +1,40 @@
 :root {
-    --bg-main: #0a0e17;
-    --bg-card: #111827;
-    --border-card: #1f2937;
-    --border-hover: #374151;
-    --accent-green: #10b981;
-    --accent-green-glow: rgba(16, 185, 129, 0.2);
-    --accent-purple: #a855f7;
-    --accent-cyan: #06b6d4;
-    --text-primary: #f9fafb;
-    --text-secondary: #9ca3af;
-    --text-muted: #4b5563;
+    --bg-main: #060913;
+    --bg-card: #0c1222;
+    --border-card: #1e293b;
+    --border-hover: #38bdf8;
+    --accent-blue: #38bdf8;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body {
-    background-color: var(--bg-main);
+html, body {
+    background-color: var(--bg-main) !important;
     color: var(--text-primary);
-    line-height: 1.6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    line-height: 1.6;
 }
 
 .container {
-    max-width: 1050px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 1.5rem;
     width: 100%;
 }
 
-nav {
-    background-color: rgba(10, 14, 23, 0.85);
+/* Navigation */
+.navbar {
+    background-color: rgba(6, 9, 19, 0.85);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-card);
     position: sticky;
@@ -52,129 +50,39 @@ nav {
 }
 
 .brand {
-    font-family: monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 1.15rem;
     font-weight: 700;
-    color: var(--accent-green);
+    color: var(--accent-blue);
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.brand::before {
-    content: "●";
-    font-size: 0.8rem;
-    color: var(--accent-green);
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0.3; }
-    100% { opacity: 1; }
+    letter-spacing: -0.02em;
 }
 
 .nav-links {
     display: flex;
-    gap: 1.75rem;
+    gap: 2rem;
     list-style: none;
 }
 
 .nav-links a {
     color: var(--text-secondary);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 500;
-    transition: all 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover, .nav-links a.active {
-    color: var(--text-primary);
+    color: var(--accent-blue);
 }
 
 .nav-links a.active {
-    border-bottom: 2px solid var(--accent-green);
+    border-bottom: 2px solid var(--accent-blue);
     padding-bottom: 0.25rem;
 }
 
-.page-header {
-    padding: 4rem 0 2rem;
-}
-
-.terminal-prompt {
-    font-family: monospace;
-    color: var(--accent-purple);
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-}
-
-h1 {
-    font-size: 2.75rem;
-    font-weight: 800;
-    color: #ffffff;
-    letter-spacing: -0.02em;
-}
-
-h2 {
-    font-size: 1.8rem;
-    color: #ffffff;
-    margin-bottom: 1.5rem;
-}
-
-.btn-group {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 1.5rem;
-}
-
-.btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.7rem 1.4rem;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
-
-.btn-primary {
-    background-color: var(--accent-green);
-    color: #052e16;
-}
-
-.btn-primary:hover {
-    box-shadow: 0 0 20px var(--accent-green-glow);
-    transform: translateY(-2px);
-}
-
-.btn-outline {
-    background: var(--bg-card);
-    border: 1px solid var(--border-card);
-    color: var(--text-primary);
-}
-
-.btn-outline:hover {
-    border-color: var(--accent-purple);
-    color: var(--accent-purple);
-}
-
-.card {
-    background-color: var(--bg-card);
-    border: 1px solid var(--border-card);
-    border-radius: 12px;
-    padding: 1.75rem;
-    transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.card:hover {
-    border-color: var(--border-hover);
-}
-
-footer {
+/* Footer */
+.footer {
     margin-top: auto;
     border-top: 1px solid var(--border-card);
     padding: 2.5rem 0;
