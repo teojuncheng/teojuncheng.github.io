@@ -5,6 +5,9 @@ interface Props {
 
 const { title } = Astro.props;
 const currentPath = Astro.url.pathname;
+
+// 1. Import the global CSS file directly into the layout
+import '../styles/global.css';
 ---
 
 <!DOCTYPE html>
@@ -13,14 +16,17 @@ const currentPath = Astro.url.pathname;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title}</title>
-    <link rel="stylesheet" href="/src/styles/global.css">
+    <!-- Google Fonts for crisp modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Shared Navigation -->
-    <nav>
+    <!-- Top Navigation -->
+    <nav class="navbar">
         <div class="container nav-container">
-            <a href="/" class="brand">teo@dev:~$</a>
+            <a href="/" class="brand">&lt;TeoJunCheng /&gt;</a>
             <ul class="nav-links">
                 <li><a href="/" class={currentPath === "/" ? "active" : ""}>Home</a></li>
                 <li><a href="/about" class={currentPath.startsWith("/about") ? "active" : ""}>About</a></li>
@@ -31,13 +37,13 @@ const currentPath = Astro.url.pathname;
         </div>
     </nav>
 
-    <div class="container">
-        <!-- Page content loads here dynamically -->
+    <!-- Main Body Container -->
+    <main class="container">
         <slot />
-    </div>
+    </main>
 
-    <!-- Shared Footer -->
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <p>© 2026 Teo Jun Cheng • Built with Astro & Hosted on GitHub Pages</p>
         </div>
