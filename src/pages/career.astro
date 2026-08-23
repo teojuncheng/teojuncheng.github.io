@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Career & Resume | Teo Jun Cheng">
+    <header class="page-header">
+        <div class="terminal-prompt">// CAREER & EXPERIENCE</div>
+        <h1>Work History & Credentials</h1>
+        <div class="btn-group" style="margin-top: 1rem;">
+            <a href="/Resume.pdf" target="_blank" class="btn btn-primary">📄 Open Full PDF[cite: 1]</a>
+            <a href="/Resume.pdf" download="Teo_Jun_Cheng_Resume.pdf" class="btn btn-outline">📥 Download CV[cite: 1]</a>
+        </div>
+    </header>
+
+    <section style="margin-bottom: 3rem;">
+        <div class="card" style="margin-bottom: 1.5rem;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <h3 style="color:#fff;">Software Engineer Intern[cite: 1]</h3>
+                <span style="color: var(--accent-green); font-size:0.9rem;">Mar 2026 – Aug 2026[cite: 1]</span>
+            </div>
+            <div style="color: var(--text-secondary); margin-bottom: 1rem;">Apploqic Technologies • Kuala Lumpur[cite: 1]</div>
+            <ul style="color: var(--text-muted); padding-left: 1.2rem; line-height: 1.8;">
+                <li>Developed decoupled mobile applications (Client Quotation Request & Property Management) using Flutter and Laravel REST APIs[cite: 1].</li>
+                <li>Maintained and optimized client websites under cPanel, WordPress, and Elementor environments[cite: 1].</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="terminal-prompt">// RESUME PREVIEW</div>
+            <h3 style="color:#fff; margin-bottom: 1rem;">Curriculum Vitae</h3>
+            <iframe 
+                src="/Resume.pdf" 
+                width="100%" 
+                height="700px" 
+                style="border: none; border-radius: 8px; background: white;">
+            </iframe>
+        </div>
+    </section>
+</Layout>

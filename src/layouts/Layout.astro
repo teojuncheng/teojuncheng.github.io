@@ -1,0 +1,47 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <link rel="stylesheet" href="/src/styles/global.css">
+</head>
+<body>
+
+    <!-- Shared Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="/" class="brand">teo@dev:~$</a>
+            <ul class="nav-links">
+                <li><a href="/" class={currentPath === "/" ? "active" : ""}>Home</a></li>
+                <li><a href="/about" class={currentPath.startsWith("/about") ? "active" : ""}>About</a></li>
+                <li><a href="/projects" class={currentPath.startsWith("/projects") ? "active" : ""}>Projects</a></li>
+                <li><a href="/career" class={currentPath.startsWith("/career") ? "active" : ""}>Career</a></li>
+                <li><a href="/contact" class={currentPath.startsWith("/contact") ? "active" : ""}>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Page content loads here dynamically -->
+        <slot />
+    </div>
+
+    <!-- Shared Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Teo Jun Cheng • Built with Astro & Hosted on GitHub Pages</p>
+        </div>
+    </footer>
+
+</body>
+</html>

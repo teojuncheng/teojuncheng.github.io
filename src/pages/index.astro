@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Teo Jun Cheng | Software Engineer">
+    <section class="hero" style="padding: 5rem 0 3rem; max-width: 800px;">
+        <div class="terminal-prompt">// HELLO, WORLD</div>
+        <h1>Hi, I'm <span style="color: var(--accent-green);">Teo Jun Cheng</span></h1>
+        <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Full-stack software developer building scalable web and mobile solutions.
+        </p>
+        <p style="color: var(--text-muted); max-width: 650px;">
+            Final-year Software Engineering student passionate about decoupled architecture, modern frameworks, and problem-solving[cite: 1]. Available for full-time opportunities starting September 2026[cite: 1].
+        </p>
+        <div class="btn-group">
+            <a href="/projects" class="btn btn-primary">View Projects</a>
+            <a href="/contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 3rem 0;">
+        <div class="card" style="text-align: center; padding: 1.5rem;">
+            <div style="font-size: 2rem; font-weight: 700; color: var(--accent-green);">3.74</div>
+            <div style="color: var(--text-secondary); font-size: 0.85rem;">Current CGPA[cite: 1]</div>
+        </div>
+        <div class="card" style="text-align: center; padding: 1.5rem;">
+            <div style="font-size: 2rem; font-weight: 700; color: var(--accent-green);">6x</div>
+            <div style="color: var(--text-secondary); font-size: 0.85rem;">Dean's List Award[cite: 1]</div>
+        </div>
+        <div class="card" style="text-align: center; padding: 1.5rem;">
+            <div style="font-size: 2rem; font-weight: 700; color: var(--accent-green);">Kuala Lumpur</div>
+            <div style="color: var(--text-secondary); font-size: 0.85rem;">Based In[cite: 1]</div>
+        </div>
+        <div class="card" style="text-align: center; padding: 1.5rem;">
+            <div style="font-size: 2rem; font-weight: 700; color: #4ade80;">Open</div>
+            <div style="color: var(--text-secondary); font-size: 0.85rem;">To Full-Time Roles[cite: 1]</div>
+        </div>
+    </section>
+
+    <!-- Currently -->
+    <section style="margin-bottom: 4rem;">
+        <div class="terminal-prompt">// STATUS UPDATE</div>
+        <h2>Currently</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+            <div class="card">
+                <div class="terminal-prompt" style="color: var(--accent-cyan); font-size: 0.8rem;">STUDYING</div>
+                <h3 style="color:#fff; margin-bottom:0.5rem;">BCompSc. Software Engineering at UMS[cite: 1]</h3>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Final Year • Graduating August 2026[cite: 1]</p>
+            </div>
+            <div class="card">
+                <div class="terminal-prompt" style="color: var(--accent-green); font-size: 0.8rem;">INTERNING AT</div>
+                <h3 style="color:#fff; margin-bottom:0.5rem;">Apploqic Technologies[cite: 1]</h3>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Full-stack development with Flutter & Laravel API integration[cite: 1].</p>
+            </div>
+        </div>
+    </section>
+</Layout>
