@@ -3,56 +3,571 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Teo Jun Cheng | Software Engineer">
-    <section class="hero" style="padding: 5rem 0 3rem; max-width: 800px;">
-        <div class="terminal-prompt">// HELLO, WORLD</div>
-        <h1>Hi, I'm <span style="color: var(--accent-green);">Teo Jun Cheng</span></h1>
-        <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 1rem;">
-            Full-stack software developer building scalable web and mobile solutions.
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section">
+        <div class="terminal-tag">// HELLO, WORLD</div>
+        <h1 class="hero-title">Hi, I'm <span class="highlight">Teo Jun Cheng</span></h1>
+        <p class="hero-subtitle">Software Engineer. Building scalable web & mobile solutions with purpose.</p>
+        <p class="hero-description">
+            Final-year Software Engineering student passionate about decoupled architecture, modern frameworks, and problem-solving. Welcome to my personal space — where I document my technical journey, share builds, and grow in public.
         </p>
-        <p style="color: var(--text-muted); max-width: 650px;">
-            Final-year Software Engineering student passionate about decoupled architecture, modern frameworks, and problem-solving[cite: 1]. Available for full-time opportunities starting September 2026[cite: 1].
-        </p>
-        <div class="btn-group">
+        <div class="hero-actions">
             <a href="/projects" class="btn btn-primary">View Projects</a>
             <a href="/contact" class="btn btn-outline">Get in Touch</a>
         </div>
     </section>
 
-    <!-- Stats -->
-    <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 3rem 0;">
-        <div class="card" style="text-align: center; padding: 1.5rem;">
-            <div style="font-size: 2rem; font-weight: 700; color: var(--accent-green);">3.74</div>
-            <div style="color: var(--text-secondary); font-size: 0.85rem;">Current CGPA[cite: 1]</div>
+    <!-- 2. QUICK STATS ROW -->
+    <section class="stats-row">
+        <div class="stat-box">
+            <div class="stat-number">3.74</div>
+            <div class="stat-name">Current CGPA</div>
         </div>
-        <div class="card" style="text-align: center; padding: 1.5rem;">
-            <div style="font-size: 2rem; font-weight: 700; color: var(--accent-green);">6x</div>
-            <div style="color: var(--text-secondary); font-size: 0.85rem;">Dean's List Award[cite: 1]</div>
+        <div class="stat-box">
+            <div class="stat-number">6×</div>
+            <div class="stat-name">Dean's List</div>
         </div>
-        <div class="card" style="text-align: center; padding: 1.5rem;">
-            <div style="font-size: 2rem; font-weight: 700; color: var(--accent-green);">Kuala Lumpur</div>
-            <div style="color: var(--text-secondary); font-size: 0.85rem;">Based In[cite: 1]</div>
+        <div class="stat-box">
+            <div class="stat-number">Kuala Lumpur</div>
+            <div class="stat-name">Based in</div>
         </div>
-        <div class="card" style="text-align: center; padding: 1.5rem;">
-            <div style="font-size: 2rem; font-weight: 700; color: #4ade80;">Open</div>
-            <div style="color: var(--text-secondary); font-size: 0.85rem;">To Full-Time Roles[cite: 1]</div>
+        <div class="stat-box">
+            <div class="stat-number stat-open">Open</div>
+            <div class="stat-name">To opportunities</div>
         </div>
     </section>
 
-    <!-- Currently -->
-    <section style="margin-bottom: 4rem;">
-        <div class="terminal-prompt">// STATUS UPDATE</div>
-        <h2>Currently</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-            <div class="card">
-                <div class="terminal-prompt" style="color: var(--accent-cyan); font-size: 0.8rem;">STUDYING</div>
-                <h3 style="color:#fff; margin-bottom:0.5rem;">BCompSc. Software Engineering at UMS[cite: 1]</h3>
-                <p style="color: var(--text-secondary); font-size: 0.9rem;">Final Year • Graduating August 2026[cite: 1]</p>
+    <!-- 3. CURRENT STATUS -->
+    <section class="content-section">
+        <div class="terminal-tag">// STATUS UPDATE</div>
+        <h2 class="section-heading">Currently</h2>
+
+        <div class="status-grid">
+            <div class="info-card">
+                <div class="card-icon">🎓</div>
+                <div class="card-details">
+                    <div class="card-tag">STUDYING</div>
+                    <div class="card-title">BCompSc. Software Engineering at UMS</div>
+                    <div class="card-subtitle">Final Year • Graduating August 2026</div>
+                </div>
             </div>
-            <div class="card">
-                <div class="terminal-prompt" style="color: var(--accent-green); font-size: 0.8rem;">INTERNING AT</div>
-                <h3 style="color:#fff; margin-bottom:0.5rem;">Apploqic Technologies[cite: 1]</h3>
-                <p style="color: var(--text-secondary); font-size: 0.9rem;">Full-stack development with Flutter & Laravel API integration[cite: 1].</p>
+
+            <div class="info-card">
+                <div class="card-icon">💼</div>
+                <div class="card-details">
+                    <div class="card-tag">INTERNING AT</div>
+                    <div class="card-title">Apploqic Technologies</div>
+                    <div class="card-subtitle">Full-stack mobile client development with Flutter & Laravel REST APIs • Kuala Lumpur</div>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- 4. TECH STACK -->
+    <section class="content-section">
+        <div class="terminal-tag">// CORE COMPETENCIES</div>
+        <h2 class="section-heading">Tech Stack</h2>
+
+        <div class="stack-wrapper">
+            <!-- Languages -->
+            <div class="stack-group">
+                <div class="stack-group-title">LANGUAGES</div>
+                <div class="tech-badge-grid">
+                    <span class="tech-chip">PHP</span>
+                    <span class="tech-chip">Dart</span>
+                    <span class="tech-chip">Python</span>
+                    <span class="tech-chip">JavaScript</span>
+                    <span class="tech-chip">TypeScript</span>
+                    <span class="tech-chip">Kotlin</span>
+                    <span class="tech-chip">C#</span>
+                    <span class="tech-chip">C++</span>
+                    <span class="tech-chip">Java</span>
+                    <span class="tech-chip">HTML5 / CSS3</span>
+                </div>
+            </div>
+
+            <!-- Frameworks & Tools -->
+            <div class="stack-group">
+                <div class="stack-group-title">FRAMEWORKS & TOOLS</div>
+                <div class="tech-badge-grid">
+                    <span class="tech-chip highlight-chip">Flutter</span>
+                    <span class="tech-chip highlight-chip">Laravel</span>
+                    <span class="tech-chip">Astro</span>
+                    <span class="tech-chip">MySQL</span>
+                    <span class="tech-chip">REST APIs</span>
+                    <span class="tech-chip">Unity (VR)</span>
+                    <span class="tech-chip">Git / GitHub</span>
+                    <span class="tech-chip">cPanel</span>
+                    <span class="tech-chip">WordPress / Elementor</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FEATURED PROJECTS -->
+    <section class="content-section">
+        <div class="terminal-tag">// WHAT I'VE BUILT</div>
+        <h2 class="section-heading">Featured Projects</h2>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="featured-card">
+                <div class="card-top">
+                    <span class="pill pill-purple">🌐 FYP • Completed</span>
+                    <span class="pill pill-muted">Private</span>
+                </div>
+                <h3 class="project-name">ServeTogether — Personalised Volunteer System</h3>
+                <p class="project-summary">
+                    A web-based volunteer management platform with an interest-based recommendation algorithm to digitize outreach and optimize task allocation.
+                </p>
+                <div class="tag-row">
+                    <span class="mini-tag">PHP</span>
+                    <span class="mini-tag">MySQL</span>
+                    <span class="mini-tag">JavaScript</span>
+                    <span class="mini-tag">HTML5 / CSS3</span>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="featured-card">
+                <div class="card-top">
+                    <span class="pill pill-cyan">📱 Internship • Apploqic</span>
+                    <span class="pill pill-green">Active</span>
+                </div>
+                <h3 class="project-name">Client Quotation & Service Request App</h3>
+                <p class="project-summary">
+                    Decoupled mobile application enabling clients to customize parameters, view live service rates, and generate formal price quotation submissions.
+                </p>
+                <div class="tag-row">
+                    <span class="mini-tag">Flutter</span>
+                    <span class="mini-tag">Dart</span>
+                    <span class="mini-tag">Laravel API</span>
+                    <span class="mini-tag">MySQL</span>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="featured-card">
+                <div class="card-top">
+                    <span class="pill pill-cyan">🏢 Internship • Apploqic</span>
+                    <span class="pill pill-green">Active</span>
+                </div>
+                <h3 class="project-name">Property Management Application</h3>
+                <p class="project-summary">
+                    Cross-platform solution designed to manage units, streamline tenant inquiries, and handle automated maintenance synchronization.
+                </p>
+                <div class="tag-row">
+                    <span class="mini-tag">Flutter</span>
+                    <span class="mini-tag">Dart</span>
+                    <span class="mini-tag">Laravel API</span>
+                    <span class="mini-tag">cPanel</span>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="featured-card">
+                <div class="card-top">
+                    <span class="pill pill-green">🤖 Hackathon • 2025</span>
+                    <span class="pill pill-muted">Prototype</span>
+                </div>
+                <h3 class="project-name">AI Sales Recommendation Chatbot</h3>
+                <p class="project-summary">
+                    Machine learning sales assistant prototype analyzing customer behavioral datasets to provide personalized, high-value product suggestions.
+                </p>
+                <div class="tag-row">
+                    <span class="mini-tag">Python</span>
+                    <span class="mini-tag">Machine Learning</span>
+                    <span class="mini-tag">Data Analytics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. WHAT'S HERE EXPLORER -->
+    <section class="content-section" style="margin-bottom: 5rem;">
+        <div class="terminal-tag">// EXPLORE</div>
+        <h2 class="section-heading">What's here</h2>
+
+        <div class="explore-grid">
+            <a href="/about" class="explore-card">
+                <div class="explore-icon">👤</div>
+                <div>
+                    <div class="explore-title">About Me</div>
+                    <div class="explore-desc">Background, philosophy, values, and life outside the code.</div>
+                </div>
+            </a>
+
+            <a href="/projects" class="explore-card">
+                <div class="explore-icon">🛠️</div>
+                <div>
+                    <div class="explore-title">Projects & Skills</div>
+                    <div class="explore-desc">Full-stack web architectures, mobile apps, and machine learning tools.</div>
+                </div>
+            </a>
+
+            <a href="/career" class="explore-card">
+                <div class="explore-icon">🚀</div>
+                <div>
+                    <div class="explore-title">Career</div>
+                    <div class="explore-desc">Apploqic internship history, awards, and embedded PDF resume preview.</div>
+                </div>
+            </a>
+
+            <a href="/contact" class="explore-card">
+                <div class="explore-icon">✉️</div>
+                <div>
+                    <div class="explore-title">Contact</div>
+                    <div class="explore-desc">Open to full-time roles starting Sept 2026 — let's build together.</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
 </Layout>
+
+<style>
+    /* Hero */
+    .hero-section {
+        padding: 5.5rem 0 3.5rem;
+        max-width: 820px;
+    }
+
+    .terminal-tag {
+        font-family: monospace;
+        color: #38bdf8;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        letter-spacing: 0.05em;
+    }
+
+    .hero-title {
+        font-size: 3.25rem;
+        font-weight: 800;
+        color: #ffffff;
+        line-height: 1.15;
+        margin-bottom: 1.25rem;
+        letter-spacing: -0.03em;
+    }
+
+    .highlight {
+        color: #38bdf8;
+    }
+
+    .hero-subtitle {
+        font-size: 1.35rem;
+        color: #f1f5f9;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .hero-description {
+        color: #94a3b8;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+    }
+
+    .hero-actions {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    /* Buttons */
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.75rem 1.6rem;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+        background-color: #38bdf8;
+        color: #082f49;
+    }
+
+    .btn-primary:hover {
+        background-color: #7dd3fc;
+        transform: translateY(-2px);
+        box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+    }
+
+    .btn-outline {
+        background-color: transparent;
+        border: 1px solid #1e293b;
+        color: #cbd5e1;
+    }
+
+    .btn-outline:hover {
+        border-color: #38bdf8;
+        color: #ffffff;
+    }
+
+    /* Stats */
+    .stats-row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        gap: 1.25rem;
+        margin-bottom: 4.5rem;
+    }
+
+    .stat-box {
+        background-color: #0f172a;
+        border: 1px solid #1e293b;
+        border-radius: 12px;
+        padding: 1.75rem 1.5rem;
+        text-align: center;
+    }
+
+    .stat-number {
+        font-size: 2.25rem;
+        font-weight: 800;
+        color: #38bdf8;
+        margin-bottom: 0.35rem;
+    }
+
+    .stat-open {
+        color: #4ade80;
+    }
+
+    .stat-name {
+        color: #94a3b8;
+        font-size: 0.9rem;
+    }
+
+    /* Sections */
+    .content-section {
+        margin-bottom: 4.5rem;
+    }
+
+    .section-heading {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #ffffff;
+        margin-bottom: 1.75rem;
+    }
+
+    /* Status Cards */
+    .status-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .info-card {
+        background-color: #0f172a;
+        border: 1px solid #1e293b;
+        border-radius: 12px;
+        padding: 1.75rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 1.25rem;
+    }
+
+    .card-icon {
+        font-size: 1.75rem;
+        line-height: 1;
+    }
+
+    .card-tag {
+        font-family: monospace;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #38bdf8;
+        letter-spacing: 0.05em;
+        margin-bottom: 0.4rem;
+    }
+
+    .card-title {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .card-subtitle {
+        color: #94a3b8;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    /* Tech Stack */
+    .stack-wrapper {
+        background-color: #0f172a;
+        border: 1px solid #1e293b;
+        border-radius: 12px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .stack-group-title {
+        font-family: monospace;
+        font-size: 0.85rem;
+        color: #38bdf8;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        margin-bottom: 1rem;
+    }
+
+    .tech-badge-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .tech-chip {
+        font-family: monospace;
+        font-size: 0.88rem;
+        background-color: #1e293b;
+        color: #e2e8f0;
+        padding: 0.45rem 0.9rem;
+        border-radius: 8px;
+        border: 1px solid #334155;
+    }
+
+    .highlight-chip {
+        border-color: #0284c7;
+        color: #38bdf8;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .featured-card {
+        background-color: #0f172a;
+        border: 1px solid #1e293b;
+        border-radius: 12px;
+        padding: 1.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .featured-card:hover {
+        border-color: #38bdf8;
+        transform: translateY(-2px);
+    }
+
+    .card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .pill {
+        font-size: 0.75rem;
+        font-family: monospace;
+        font-weight: 600;
+        padding: 0.25rem 0.65rem;
+        border-radius: 20px;
+    }
+
+    .pill-purple {
+        background-color: rgba(168, 85, 247, 0.15);
+        color: #c084fc;
+        border: 1px solid rgba(168, 85, 247, 0.3);
+    }
+
+    .pill-cyan {
+        background-color: rgba(6, 182, 212, 0.15);
+        color: #22d3ee;
+        border: 1px solid rgba(6, 182, 212, 0.3);
+    }
+
+    .pill-green {
+        background-color: rgba(34, 197, 94, 0.15);
+        color: #4ade80;
+        border: 1px solid rgba(34, 197, 94, 0.3);
+    }
+
+    .pill-muted {
+        background-color: #1e293b;
+        color: #94a3b8;
+    }
+
+    .project-name {
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+    }
+
+    .project-summary {
+        color: #94a3b8;
+        font-size: 0.92rem;
+        line-height: 1.6;
+        margin-bottom: 1.25rem;
+    }
+
+    .tag-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: auto;
+    }
+
+    .mini-tag {
+        font-family: monospace;
+        font-size: 0.78rem;
+        background-color: #1e293b;
+        color: #cbd5e1;
+        padding: 0.25rem 0.6rem;
+        border-radius: 6px;
+    }
+
+    /* What's Here Grid */
+    .explore-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.25rem;
+    }
+
+    .explore-card {
+        background-color: #0f172a;
+        border: 1px solid #1e293b;
+        border-radius: 12px;
+        padding: 1.5rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        text-decoration: none;
+        transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .explore-card:hover {
+        border-color: #38bdf8;
+        transform: translateY(-2px);
+    }
+
+    .explore-icon {
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+
+    .explore-title {
+        color: #ffffff;
+        font-size: 1.05rem;
+        font-weight: 700;
+        margin-bottom: 0.3rem;
+    }
+
+    .explore-desc {
+        color: #94a3b8;
+        font-size: 0.88rem;
+        line-height: 1.5;
+    }
+</style>
