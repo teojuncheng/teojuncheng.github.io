@@ -163,16 +163,12 @@ import Layout from '../layouts/Layout.astro';
 
         <div class="axioms-grid">
             <div class="axiom-box">
-                <p class="axiom-quote">"To keep your balance, you must keep moving."</p>
-                <span class="axiom-meta">— Continuous Momentum</span>
+                <p class="axiom-quote">"Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present."</p>
+                <span class="axiom-meta">— Master Oogway</span>
             </div>
             <div class="axiom-box">
-                <p class="axiom-quote">"True failure occurs only when you abandon the pursuit of refinement."</p>
-                <span class="axiom-meta">— Relentless Iteration</span>
-            </div>
-            <div class="axiom-box">
-                <p class="axiom-quote">"Capitalize on your discipline, vitality, and capability before time passes."</p>
-                <span class="axiom-meta">— Intentional Action</span>
+                <p class="axiom-quote">"If you only do what you can do, you will never be more than who you are."</p>
+                <span class="axiom-meta">— Master Shifu</span>
             </div>
         </div>
     </section>
@@ -454,11 +450,11 @@ import Layout from '../layouts/Layout.astro';
         line-height: 1.6;
     }
 
-    /* Axioms */
+    /* Axioms (2-Card Grid) */
     .axioms-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.25rem;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 1.5rem;
     }
 
     .axiom-box {
@@ -466,23 +462,24 @@ import Layout from '../layouts/Layout.astro';
         border: 1px solid #1e293b;
         border-left: 3px solid #10b981;
         border-radius: 6px;
-        padding: 1.5rem 1.75rem;
+        padding: 1.75rem 2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 1rem;
+        gap: 1.25rem;
     }
 
     .axiom-quote {
         color: #e2e8f0;
-        font-size: 0.96rem;
+        font-size: 1.05rem;
         font-style: italic;
-        line-height: 1.6;
+        line-height: 1.7;
     }
 
     .axiom-meta {
         font-family: 'JetBrains Mono', monospace;
-        font-size: 0.8rem;
+        font-size: 0.82rem;
         color: #10b981;
+        font-weight: 600;
     }
 </style>
