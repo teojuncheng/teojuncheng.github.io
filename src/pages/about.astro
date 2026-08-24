@@ -4,141 +4,175 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="About | Teo Jun Cheng">
 
-    <!-- 1. HEADER SECTION -->
-    <header class="about-hero">
-        <div class="terminal-tag">// ABOUT ME</div>
-        <h1 class="page-title">The person behind <span class="highlight">the code</span></h1>
-        <p class="hero-intro">
-            I'm Teo Jun Cheng — a final year Software Engineering student at Universiti Malaysia Sabah. I build things with purpose, stay curious, and craft software solutions that deliver lasting value.
+    <!-- 1. EDITORIAL DOSSIER HEADER -->
+    <header class="dossier-hero">
+        <div class="section-tag">01 // DOSSIER</div>
+        <h1 class="dossier-title">Software Engineer, Systematic Thinker & <span class="gradient-text">Problem Solver</span>.</h1>
+        <p class="dossier-lead">
+            Final-year Software Engineering undergraduate at Universiti Malaysia Sabah (UMS), actively operating at the intersection of decoupled backend architectures and responsive client applications.
         </p>
     </header>
 
-    <div class="divider"></div>
-
-    <!-- 2. WHO I AM -->
-    <section class="content-section">
-        <div class="terminal-tag">// WHO I AM</div>
-        <h2 class="section-heading">A bit about me</h2>
-
-        <div class="bio-grid">
-            <div class="bio-col">
-                <p>
-                    I'm currently completing my Bachelor of Computer Science in Software Engineering at <strong>Universiti Malaysia Sabah (UMS)</strong>, while undergoing my industrial internship at <strong>Apploqic Technologies</strong> in Kuala Lumpur.
+    <!-- 2. BENTO OVERVIEW GRID -->
+    <section class="section-block">
+        <div class="bento-grid">
+            
+            <!-- Large Card: Core Philosophy -->
+            <div class="bento-card bento-wide">
+                <div class="card-kicker">ENGINEERING PHILOSOPHY</div>
+                <h2 class="card-heading">Architecting for reliability, scale, and clarity.</h2>
+                <p class="card-body">
+                    I treat software development as an exercise in structural precision. Rather than stitching hasty implementations together, I specialize in architecting decoupled systems — ensuring API interfaces remain independent, predictable, and resilient under production loads.
                 </p>
-                <p>
-                    I approach engineering systematically and independently — analyzing architectures a few steps ahead to build maintainable, decoupled systems. I care deeply about product reliability and user experience, treating every build with craftsmanship.
-                </p>
+                <div class="core-focus-list">
+                    <span class="focus-item">✦ Decoupled REST APIs</span>
+                    <span class="focus-item">✦ Cross-Platform Mobile (Flutter)</span>
+                    <span class="focus-item">✦ Relational Schemas (MySQL)</span>
+                </div>
             </div>
 
-            <div class="bio-col">
-                <p>
-                    Outside of core development, I focus on running, gaming, language study, and personal finance. I believe technology should empower people and streamline everyday processes without adding unnecessary complexity.
-                </p>
-                <p>
-                    I'm driven by continuous growth — in technical capabilities, professional discipline, and the tangible impact of the products I deliver. That's what keeps me motivated every day.
-                </p>
+            <!-- Side Card: Fast Diagnostics -->
+            <div class="bento-card">
+                <div class="card-kicker">CORE SPECIFICATIONS</div>
+                <ul class="spec-list">
+                    <li>
+                        <span class="spec-key">INSTITUTION</span>
+                        <span class="spec-val">Universiti Malaysia Sabah</span>
+                    </li>
+                    <li>
+                        <span class="spec-key">MAJOR</span>
+                        <span class="spec-val">BCompSc. Software Engineering</span>
+                    </li>
+                    <li>
+                        <span class="spec-key">ACADEMIC STANDING</span>
+                        <span class="spec-val text-emerald">3.74 CGPA (6× Dean's List)</span>
+                    </li>
+                    <li>
+                        <span class="spec-key">INTERNSHIP</span>
+                        <span class="spec-val">Apploqic Technologies</span>
+                    </li>
+                    <li>
+                        <span class="spec-key">AVAILABILITY</span>
+                        <span class="spec-val text-emerald">September 2026 (Full-Time)</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3. CHRONOLOGICAL MILESTONE LOG -->
+    <section class="section-block">
+        <div class="section-tag">02 // TRAJECTORY</div>
+        <h2 class="section-title">Milestones & Technical Evolution</h2>
+
+        <div class="milestone-log">
+            
+            <article class="milestone-entry">
+                <div class="milestone-period">2026 – PRESENT</div>
+                <div class="milestone-body">
+                    <h3 class="milestone-role">Software Engineer Intern <span class="milestone-org">@ Apploqic Technologies</span></h3>
+                    <p class="milestone-desc">
+                        Engineering enterprise mobile applications (Client Quotation Estimator & Property Management) utilizing Flutter paired with decoupled Laravel REST API layers. Managing live production WordPress infrastructures, database optimizations, and client delivery pipelines.
+                    </p>
+                    <div class="tag-row">
+                        <span class="mono-badge">Flutter</span>
+                        <span class="mono-badge">Laravel API</span>
+                        <span class="mono-badge">MySQL</span>
+                        <span class="mono-badge">cPanel</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="milestone-entry">
+                <div class="milestone-period">2022 – 2026</div>
+                <div class="milestone-body">
+                    <h3 class="milestone-role">Undergraduate Degree <span class="milestone-org">@ Universiti Malaysia Sabah</span></h3>
+                    <p class="milestone-desc">
+                        Underwent comprehensive software engineering training spanning system design patterns, algorithmic optimization, and data structures. Maintained a 3.74 CGPA with 6 consecutive Dean's List honors. Built ServeTogether as FYP and competed in the UM Hackathon AI track.
+                    </p>
+                    <div class="tag-row">
+                        <span class="mono-badge">Distributed Systems</span>
+                        <span class="mono-badge">Full-Stack Web</span>
+                        <span class="mono-badge">Machine Learning</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="milestone-entry">
+                <div class="milestone-period">2016 – 2020</div>
+                <div class="milestone-body">
+                    <h3 class="milestone-role">Foundational Studies <span class="milestone-org">@ Science Stream</span></h3>
+                    <p class="milestone-desc">
+                        Cultivated an early passion for computational thinking, advanced mathematics, and logic structures. This laid the quantitative framework for subsequent software architecture studies.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- 4. PERSONAL PURSUITS (BEYOND CODE) -->
+    <section class="section-block">
+        <div class="section-tag">03 // DIMENSIONS</div>
+        <h2 class="section-title">Discipline & Pursuits Outside the Terminal</h2>
+
+        <div class="pursuits-grid">
+            <div class="pursuit-card">
+                <div class="pursuit-top">
+                    <span class="pursuit-icon">🏃‍♂️</span>
+                    <span class="pursuit-tag">ENDURANCE</span>
+                </div>
+                <h3 class="pursuit-title">Distance Running</h3>
+                <p class="pursuit-desc">Structured long-distance training to build sustained physical stamina, mental endurance, and everyday discipline.</p>
+            </div>
+
+            <div class="pursuit-card">
+                <div class="pursuit-top">
+                    <span class="pursuit-icon">🎮</span>
+                    <span class="pursuit-tag">STRATEGY</span>
+                </div>
+                <h3 class="pursuit-title">Tactical Gaming</h3>
+                <p class="pursuit-desc">Deep-dive RPG systems, emulation engineering, and complex decision-tree game theory.</p>
+            </div>
+
+            <div class="pursuit-card">
+                <div class="pursuit-top">
+                    <span class="pursuit-icon">📊</span>
+                    <span class="pursuit-tag">ANALYTICS</span>
+                </div>
+                <h3 class="pursuit-title">Personal Finance</h3>
+                <p class="pursuit-desc">Quantitative asset valuation modeling, macro analysis, and custom-scripted portfolio tracking tools.</p>
+            </div>
+
+            <div class="pursuit-card">
+                <div class="pursuit-top">
+                    <span class="pursuit-icon">⛩️</span>
+                    <span class="pursuit-tag">CULTURE</span>
+                </div>
+                <h3 class="pursuit-title">Japanese Language</h3>
+                <p class="pursuit-desc">Consistently studying Kanji and grammar structures to broaden cross-cultural communication fluency.</p>
             </div>
         </div>
     </section>
 
-    <!-- 3. MY JOURNEY / TIMELINE -->
-    <section class="content-section">
-        <div class="terminal-tag">// MY JOURNEY</div>
-        <h2 class="section-heading">My Story</h2>
+    <!-- 5. GUIDING AXIOMS -->
+    <section class="section-block" style="margin-bottom: 6rem;">
+        <div class="section-tag">04 // PRINCIPLES</div>
+        <h2 class="section-title">Guiding Axioms</h2>
 
-        <div class="timeline-container">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2016 – 2020</div>
-                <h3 class="timeline-title">Secondary Education & Science Stream</h3>
-                <p class="timeline-desc">
-                    Built strong foundations in mathematics and logical problem-solving. This period sparked my curiosity in computer systems and set the direction for my software development career.
-                </p>
+        <div class="axioms-grid">
+            <div class="axiom-box">
+                <p class="axiom-quote">"To keep your balance, you must keep moving."</p>
+                <span class="axiom-meta">— Continuous Momentum</span>
             </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2022 – PRESENT</div>
-                <h3 class="timeline-title">Universiti Malaysia Sabah (UMS)</h3>
-                <p class="timeline-desc">
-                    Pursuing BCompSc (Hons) Software Engineering. Maintained a <strong>3.74 CGPA</strong> with <strong>6× Dean's List Awards</strong>. Developed key projects including ServeTogether (FYP) and an AI Recommendation Prototype during the UM Hackathon.
-                </p>
+            <div class="axiom-box">
+                <p class="axiom-quote">"True failure occurs only when you abandon the pursuit of refinement."</p>
+                <span class="axiom-meta">— Relentless Iteration</span>
             </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2026 – PRESENT</div>
-                <h3 class="timeline-title">Software Engineer Intern • Apploqic Technologies</h3>
-                <p class="timeline-desc">
-                    Engineering cross-platform mobile applications (Flutter) integrated with decoupled Laravel REST API backends. Managing live server deployments, WordPress environments, and client deliverables.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. WHAT I DO FOR FUN -->
-    <section class="content-section">
-        <div class="terminal-tag">// BEYOND THE SCREEN</div>
-        <h2 class="section-heading">What I do for fun</h2>
-
-        <div class="fun-grid">
-            <div class="fun-card">
-                <div class="fun-icon">🏃‍♂️</div>
-                <h3 class="fun-title">Running</h3>
-                <p class="fun-desc">Dedicated to endurance training and long-distance running. A great way to stay sharp, disciplined, and energized.</p>
-            </div>
-
-            <div class="fun-card">
-                <div class="fun-icon">🎮</div>
-                <h3 class="fun-title">Gaming</h3>
-                <p class="fun-desc">A way to unwind and sharpen strategic thinking. I enjoy deep RPG narratives, tactical strategy, and classic emulation.</p>
-            </div>
-
-            <div class="fun-card">
-                <div class="fun-icon">📊</div>
-                <h3 class="fun-title">Finance</h3>
-                <p class="fun-desc">Passionate about quantitative asset valuation, automated expense tracking, and understanding global macroeconomic trends.</p>
-            </div>
-
-            <div class="fun-card">
-                <div class="fun-icon">⛩️</div>
-                <h3 class="fun-title">Languages</h3>
-                <p class="fun-desc">Actively studying Japanese language grammar and Kanji to expand cultural horizons and communication skills.</p>
-            </div>
-
-            <div class="fun-card">
-                <div class="fun-icon">🍳</div>
-                <h3 class="fun-title">Cooking</h3>
-                <p class="fun-desc">Experimenting with balanced meals and recipe optimization. Cooking is a creative outlet and a great break from screens.</p>
-            </div>
-
-            <div class="fun-card">
-                <div class="fun-icon">🤝</div>
-                <h3 class="fun-title">Community</h3>
-                <p class="fun-desc">Engaging with tech communities, hackathons, and collaborative open-source knowledge sharing.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. WORDS THAT GUIDE ME -->
-    <section class="content-section" style="margin-bottom: 5rem;">
-        <div class="terminal-tag">// QUOTES I LIVE BY</div>
-        <h2 class="section-heading">Words that <span class="highlight">guide me</span></h2>
-
-        <div class="quotes-stack">
-            <div class="quote-card">
-                <p class="quote-text">"Life is like riding a bicycle. To keep your balance, you must keep moving."</p>
-                <div class="quote-author">— Albert Einstein</div>
-            </div>
-
-            <div class="quote-card">
-                <p class="quote-text">"The time you become truly a failure is when you stop trying to succeed in life."</p>
-                <div class="quote-author">— Personal Maxim</div>
-            </div>
-
-            <div class="quote-card">
-                <p class="quote-text">"Take advantage of five before five: your youth before your old age, your health before your sickness, your wealth before your poverty, your free time before you are preoccupied, and your life before your death."</p>
-                <div class="quote-author">— Timeless Proverb</div>
+            <div class="axiom-box">
+                <p class="axiom-quote">"Capitalize on your discipline, vitality, and capability before time passes."</p>
+                <span class="axiom-meta">— Intentional Action</span>
             </div>
         </div>
     </section>
@@ -146,192 +180,309 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-    .about-hero {
-        padding: 5rem 0 2rem;
-        max-width: 820px;
+    /* Dossier Hero */
+    .dossier-hero {
+        padding: 5rem 0 3rem;
+        max-width: 860px;
     }
 
-    .terminal-tag {
+    .section-tag {
         font-family: 'JetBrains Mono', monospace;
-        color: #38bdf8;
-        font-size: 0.9rem;
-        font-weight: 600;
+        font-size: 0.8rem;
+        color: #10b981;
+        letter-spacing: 0.1em;
         margin-bottom: 0.75rem;
-        letter-spacing: 0.05em;
     }
 
-    .page-title {
-        font-size: 3.25rem;
+    .dossier-title {
+        font-size: 2.85rem;
         font-weight: 800;
         color: #ffffff;
-        line-height: 1.15;
-        margin-bottom: 1.25rem;
+        line-height: 1.2;
         letter-spacing: -0.03em;
+        margin-bottom: 1.25rem;
     }
 
-    .highlight {
-        color: #38bdf8;
+    .gradient-text {
+        background: linear-gradient(135deg, #10b981 0%, #38bdf8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
-    .hero-intro {
+    .dossier-lead {
         color: #94a3b8;
         font-size: 1.15rem;
         line-height: 1.7;
     }
 
-    .divider {
-        height: 1px;
-        background-color: #1e293b;
-        margin: 2rem 0 3.5rem;
+    /* Block Structure */
+    .section-block {
+        margin-bottom: 5.5rem;
     }
 
-    .content-section {
-        margin-bottom: 4.5rem;
-    }
-
-    .section-heading {
-        font-size: 2rem;
+    .section-title {
+        font-size: 1.85rem;
         font-weight: 800;
         color: #ffffff;
-        margin-bottom: 2rem;
         letter-spacing: -0.02em;
+        margin-bottom: 2rem;
     }
 
-    /* 2-Column Bio */
-    .bio-grid {
+    /* Bento Grid */
+    .bento-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 2.5rem;
+        grid-template-columns: 1.4fr 1fr;
+        gap: 1.5rem;
     }
 
-    .bio-col p {
-        color: #94a3b8;
-        font-size: 1.05rem;
-        line-height: 1.8;
-        margin-bottom: 1.5rem;
+    @media (max-width: 860px) {
+        .bento-grid {
+            grid-template-columns: 1fr;
+        }
     }
 
-    .bio-col strong {
-        color: #f8fafc;
-    }
-
-    /* Timeline */
-    .timeline-container {
-        position: relative;
-        padding-left: 2rem;
-        border-left: 2px solid #1e293b;
+    .bento-card {
+        background-color: #0c1222;
+        border: 1px solid #1e293b;
+        border-radius: 8px;
+        padding: 2rem;
         display: flex;
         flex-direction: column;
-        gap: 2.5rem;
-        margin-left: 0.5rem;
+        justify-content: space-between;
     }
 
-    .timeline-item {
-        position: relative;
-    }
-
-    .timeline-dot {
-        position: absolute;
-        left: -2.45rem;
-        top: 0.25rem;
-        width: 14px;
-        height: 14px;
-        border-radius: 50%;
-        background-color: #060913;
-        border: 2px solid #38bdf8;
-    }
-
-    .timeline-date {
+    .card-kicker {
         font-family: 'JetBrains Mono', monospace;
-        color: #38bdf8;
-        font-size: 0.85rem;
-        font-weight: 600;
-        margin-bottom: 0.4rem;
+        font-size: 0.75rem;
+        color: #10b981;
+        letter-spacing: 0.08em;
+        margin-bottom: 1rem;
     }
 
-    .timeline-title {
+    .card-heading {
         color: #ffffff;
-        font-size: 1.2rem;
+        font-size: 1.35rem;
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+    }
+
+    .card-body {
+        color: #94a3b8;
+        font-size: 0.96rem;
+        line-height: 1.7;
+        margin-bottom: 1.75rem;
+    }
+
+    .core-focus-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .focus-item {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.8rem;
+        color: #cbd5e1;
+        background-color: #162032;
+        padding: 0.4rem 0.8rem;
+        border-radius: 4px;
+        border: 1px solid #223249;
+    }
+
+    /* Spec List */
+    .spec-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: auto;
+    }
+
+    .spec-list li {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        border-bottom: 1px solid #162032;
+        padding-bottom: 0.75rem;
+    }
+
+    .spec-list li:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .spec-key {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.72rem;
+        color: #64748b;
+        letter-spacing: 0.05em;
+    }
+
+    .spec-val {
+        color: #f1f5f9;
+        font-size: 0.95rem;
+        font-weight: 600;
+    }
+
+    .text-emerald {
+        color: #34d399 !important;
+    }
+
+    /* Milestone Log */
+    .milestone-log {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .milestone-entry {
+        background-color: #0c1222;
+        border: 1px solid #1e293b;
+        border-radius: 8px;
+        padding: 1.75rem 2rem;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 2rem;
+        transition: border-color 0.2s ease;
+    }
+
+    .milestone-entry:hover {
+        border-color: #10b981;
+    }
+
+    @media (max-width: 768px) {
+        .milestone-entry {
+            grid-template-columns: 1fr;
+            gap: 0.75rem;
+        }
+    }
+
+    .milestone-period {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.85rem;
+        color: #10b981;
+        font-weight: 600;
+    }
+
+    .milestone-role {
+        color: #ffffff;
+        font-size: 1.15rem;
         font-weight: 700;
         margin-bottom: 0.5rem;
     }
 
-    .timeline-desc {
+    .milestone-org {
         color: #94a3b8;
-        font-size: 0.95rem;
-        line-height: 1.6;
+        font-weight: 400;
     }
 
-    /* 6-Card Grid */
-    .fun-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
-    }
-
-    .fun-card {
-        background-color: #0c1222;
-        border: 1px solid #1e293b;
-        border-radius: 12px;
-        padding: 2rem;
-        text-align: center;
-        transition: border-color 0.2s ease, transform 0.2s ease;
-    }
-
-    .fun-card:hover {
-        border-color: #38bdf8;
-        transform: translateY(-2px);
-    }
-
-    .fun-icon {
-        font-size: 2.25rem;
-        margin-bottom: 1rem;
-    }
-
-    .fun-title {
-        color: #ffffff;
-        font-size: 1.15rem;
-        font-weight: 700;
-        margin-bottom: 0.75rem;
-    }
-
-    .fun-desc {
+    .milestone-desc {
         color: #94a3b8;
-        font-size: 0.9rem;
-        line-height: 1.6;
-    }
-
-    /* Quotes Stack */
-    .quotes-stack {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .quote-card {
-        background-color: #0c1222;
-        border: 1px solid #1e293b;
-        border-radius: 12px;
-        padding: 2rem 2.25rem;
-        transition: border-color 0.2s ease;
-    }
-
-    .quote-card:hover {
-        border-color: #38bdf8;
-    }
-
-    .quote-text {
-        color: #e2e8f0;
-        font-size: 1.1rem;
-        font-style: italic;
+        font-size: 0.92rem;
         line-height: 1.7;
         margin-bottom: 1rem;
     }
 
-    .quote-author {
+    .tag-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .mono-badge {
         font-family: 'JetBrains Mono', monospace;
-        color: #38bdf8;
-        font-size: 0.9rem;
-        font-weight: 600;
+        font-size: 0.78rem;
+        background-color: #162032;
+        color: #94a3b8;
+        padding: 0.25rem 0.6rem;
+        border-radius: 4px;
+    }
+
+    /* Pursuits Grid */
+    .pursuits-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.25rem;
+    }
+
+    .pursuit-card {
+        background-color: #0c1222;
+        border: 1px solid #1e293b;
+        border-radius: 8px;
+        padding: 1.75rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .pursuit-card:hover {
+        transform: translateY(-2px);
+        border-color: #10b981;
+    }
+
+    .pursuit-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pursuit-icon {
+        font-size: 1.5rem;
+    }
+
+    .pursuit-tag {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.7rem;
+        color: #10b981;
+        background-color: rgba(16, 185, 129, 0.1);
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        letter-spacing: 0.05em;
+    }
+
+    .pursuit-title {
+        color: #ffffff;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    .pursuit-desc {
+        color: #94a3b8;
+        font-size: 0.88rem;
+        line-height: 1.6;
+    }
+
+    /* Axioms */
+    .axioms-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.25rem;
+    }
+
+    .axiom-box {
+        background-color: #0c1222;
+        border: 1px solid #1e293b;
+        border-left: 3px solid #10b981;
+        border-radius: 6px;
+        padding: 1.5rem 1.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .axiom-quote {
+        color: #e2e8f0;
+        font-size: 0.96rem;
+        font-style: italic;
+        line-height: 1.6;
+    }
+
+    .axiom-meta {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.8rem;
+        color: #10b981;
     }
 </style>
