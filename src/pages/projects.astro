@@ -4,185 +4,256 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Projects | Teo Jun Cheng">
 
-    <!-- 1. HEADER SECTION -->
+    <!-- 1. EDITORIAL HEADER -->
     <header class="projects-hero">
-        <div class="terminal-tag">// WHAT I'VE BUILT</div>
-        <h1 class="page-title">Projects & <span class="highlight">Skills</span></h1>
+        <div class="section-tag">01 // REPOSITORY</div>
+        <h1 class="hero-title">Engineering <span class="gradient-text">Builds & Projects</span>.</h1>
         <p class="hero-intro">
-            A collection of things I've built — from final year projects and enterprise mobile solutions to hackathon prototypes. Each one taught me something new.
+            A production catalog of full-stack web platforms, decoupled mobile client applications, relational database schemas, and machine learning prototypes.
         </p>
     </header>
 
-    <div class="divider"></div>
+    <!-- 2. SELECTED ARCHITECTURAL BUILDS -->
+    <section class="section-block">
+        <div class="section-tag">02 // CASE STUDIES</div>
+        <h2 class="section-heading">Featured Software Systems</h2>
 
-    <!-- 2. WHAT I'VE BUILT (PROJECTS) -->
-    <section class="content-section">
-        <div class="terminal-tag">// PROJECTS</div>
-        <h2 class="section-heading">What I've Built</h2>
-
-        <div class="projects-grid">
+        <div class="projects-stack">
             
-            <!-- Project 1: ServeTogether (FYP) -->
-            <div class="project-card">
-                <div class="card-badges">
-                    <span class="badge badge-blue">Final Year Project</span>
-                    <span class="badge badge-green">✓ Completed</span>
-                    <span class="badge badge-muted">🔒 Private Repo</span>
+            <!-- Project 1: ServeTogether -->
+            <article class="project-card">
+                <div class="card-header">
+                    <div class="project-classification">
+                        <span class="type-pill">ACADEMIC CAPSTONE (FYP)</span>
+                        <span class="status-pill status-complete">✓ Completed</span>
+                    </div>
+                    <span class="access-badge">🔒 Private Source</span>
                 </div>
-                <h3 class="project-title">ServeTogether — Personalised Volunteer System</h3>
-                <p class="project-desc">
-                    A web-based volunteer management system designed to digitize outreach, streamline participant coordination, and deliver automated interest-based opportunity matching.
-                </p>
-                <div class="tech-tags">
-                    <span class="tag">PHP</span>
-                    <span class="tag">MySQL</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">HTML5 / CSS3</span>
-                    <span class="tag">Git</span>
-                </div>
-            </div>
 
-            <!-- Project 2: Quotation App (Apploqic) -->
-            <div class="project-card">
-                <div class="card-badges">
-                    <span class="badge badge-cyan">Apploqic Technologies</span>
-                    <span class="badge badge-green">✓ Completed</span>
-                    <span class="badge badge-muted">🔒 Client App</span>
-                </div>
-                <h3 class="project-title">Client Quotation & Service Request App</h3>
-                <p class="project-desc">
-                    Decoupled cross-platform mobile application enabling enterprise clients to customize parameters, view live calculation estimates, and submit formal price quotation inquiries directly to backend servers.
-                </p>
-                <div class="tech-tags">
-                    <span class="tag tag-highlight">Flutter</span>
-                    <span class="tag">Dart</span>
-                    <span class="tag tag-highlight">Laravel REST API</span>
-                    <span class="tag">MySQL</span>
-                </div>
-            </div>
+                <div class="card-body">
+                    <h3 class="project-name">ServeTogether — Personalised Volunteer System</h3>
+                    <p class="project-desc">
+                        A full-stack web platform designed to streamline community initiative coordination. Integrated an interest-based matchmaking algorithm to analyze participant preference profiles and deliver targeted event recommendations.
+                    </p>
 
-            <!-- Project 3: Property App (Apploqic) -->
-            <div class="project-card">
-                <div class="card-badges">
-                    <span class="badge badge-cyan">Apploqic Technologies</span>
-                    <span class="badge badge-green">✓ Active</span>
-                    <span class="badge badge-muted">🔒 Client App</span>
+                    <div class="architecture-highlights">
+                        <div class="arch-item">
+                            <span class="arch-label">ARCHITECTURE</span>
+                            <span class="arch-value">Monolithic MVC with Relational Persistence</span>
+                        </div>
+                        <div class="arch-item">
+                            <span class="arch-label">CORE FUNCTION</span>
+                            <span class="arch-value">Algorithmic User-Task Opportunity Matching</span>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="project-title">Property Management Application</h3>
-                <p class="project-desc">
-                    Full-featured mobile solution built to manage property unit portfolios, automate tenant request logs, and synchronize backend records across distributed databases.
-                </p>
-                <div class="tech-tags">
-                    <span class="tag tag-highlight">Flutter</span>
-                    <span class="tag">Dart</span>
-                    <span class="tag tag-highlight">Laravel REST API</span>
-                    <span class="tag">cPanel</span>
-                </div>
-            </div>
 
-            <!-- Project 4: AI Chatbot (Hackathon) -->
-            <div class="project-card">
-                <div class="card-badges">
-                    <span class="badge badge-purple">UM Hackathon</span>
-                    <span class="badge badge-green">✓ Prototype</span>
-                    <a href="https://github.com/teojuncheng" target="_blank" class="badge badge-link">🔗 View Repo →</a>
+                <div class="card-footer">
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">JavaScript (ES6)</span>
+                    <span class="tech-tag">HTML5 / CSS3</span>
+                    <span class="tech-tag">Git</span>
                 </div>
-                <h3 class="project-title">AI Sales Recommendation Chatbot</h3>
-                <p class="project-desc">
-                    Machine learning recommendation prototype leveraging customer transaction datasets to dynamically predict consumer intent and suggest tailored upsell items.
-                </p>
-                <div class="tech-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Machine Learning</span>
-                    <span class="tag">Pandas</span>
-                    <span class="tag">Data Analytics</span>
+            </article>
+
+            <!-- Project 2: Quotation App -->
+            <article class="project-card">
+                <div class="card-header">
+                    <div class="project-classification">
+                        <span class="type-pill">ENTERPRISE CLIENT</span>
+                        <span class="status-pill status-prod">⚡ In Production</span>
+                    </div>
+                    <span class="access-badge">🏢 Apploqic Technologies</span>
                 </div>
-            </div>
+
+                <div class="card-body">
+                    <h3 class="project-name">Client Quotation & Estimator Engine</h3>
+                    <p class="project-desc">
+                        Decoupled cross-platform mobile client enabling prospective enterprise clients to select service variables, calculate cost models in real time, and dispatch formal quotation requests directly into remote Laravel API endpoints.
+                    </p>
+
+                    <div class="architecture-highlights">
+                        <div class="arch-item">
+                            <span class="arch-label">ARCHITECTURE</span>
+                            <span class="arch-value">Decoupled Client-Server (REST API)</span>
+                        </div>
+                        <div class="arch-item">
+                            <span class="arch-label">CLIENT TECH</span>
+                            <span class="arch-value">Flutter / Dart Reactive State Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <span class="tech-tag tag-featured">Flutter</span>
+                    <span class="tech-tag tag-featured">Laravel API</span>
+                    <span class="tech-tag">Dart</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">JSON REST</span>
+                </div>
+            </article>
+
+            <!-- Project 3: Property App -->
+            <article class="project-card">
+                <div class="card-header">
+                    <div class="project-classification">
+                        <span class="type-pill">ENTERPRISE SYSTEM</span>
+                        <span class="status-pill status-prod">⚡ In Production</span>
+                    </div>
+                    <span class="access-badge">🏢 Apploqic Technologies</span>
+                </div>
+
+                <div class="card-body">
+                    <h3 class="project-name">Property Unit & Tenancy Management Application</h3>
+                    <p class="project-desc">
+                        End-to-end mobile management utility designed to organize property listings, track maintenance tickets, synchronize tenant logs, and maintain relational record integrity across live staging servers.
+                    </p>
+
+                    <div class="architecture-highlights">
+                        <div class="arch-item">
+                            <span class="arch-label">DEPLOYMENT</span>
+                            <span class="arch-value">cPanel Host / Production MySQL Instances</span>
+                        </div>
+                        <div class="arch-item">
+                            <span class="arch-label">INTEGRATION</span>
+                            <span class="arch-value">Multi-tenant Authentication & API Sync</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <span class="tech-tag tag-featured">Flutter</span>
+                    <span class="tech-tag tag-featured">Laravel API</span>
+                    <span class="tech-tag">Dart</span>
+                    <span class="tech-tag">cPanel</span>
+                    <span class="tech-tag">MySQL</span>
+                </div>
+            </article>
+
+            <!-- Project 4: AI Chatbot -->
+            <article class="project-card">
+                <div class="card-header">
+                    <div class="project-classification">
+                        <span class="type-pill">HACKATHON BUILD</span>
+                        <span class="status-pill status-prototype">🤖 Prototype</span>
+                    </div>
+                    <a href="https://github.com/teojuncheng" target="_blank" rel="noopener noreferrer" class="repo-link">
+                        <span>Source Code</span>
+                        <span>↗</span>
+                    </a>
+                </div>
+
+                <div class="card-body">
+                    <h3 class="project-name">AI Sales Recommendation Chatbot</h3>
+                    <p class="project-desc">
+                        Machine learning prototype built during the UM Hackathon. Evaluated customer interaction patterns across transactional datasets to formulate dynamic product upsell suggestions and contextual recommendations.
+                    </p>
+
+                    <div class="architecture-highlights">
+                        <div class="arch-item">
+                            <span class="arch-label">PIPELINE</span>
+                            <span class="arch-value">Feature Engineering & Dataset Vectorization</span>
+                        </div>
+                        <div class="arch-item">
+                            <span class="arch-label">TARGET DOMAIN</span>
+                            <span class="arch-value">Conversational Retail Recommendation Engine</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">Data Analytics</span>
+                    <span class="tech-tag">Machine Learning</span>
+                </div>
+            </article>
 
         </div>
     </section>
 
-    <!-- 3. OPEN SOURCE & GITHUB ACTIVITY -->
-    <section class="content-section" style="margin-bottom: 5rem;">
-        <div class="terminal-tag">// OPEN SOURCE</div>
-        <h2 class="section-heading">GitHub Activity</h2>
+    <!-- 3. CODE REPOSITORIES & GIT METRICS -->
+    <section class="section-block" style="margin-bottom: 6rem;">
+        <div class="section-tag">03 // TELEMETRY</div>
+        <h2 class="section-heading">Open Source & Version Control</h2>
 
-        <!-- Metric Stat Cards -->
-        <div class="github-stats-grid">
-            <div class="github-stat-card">
-                <div class="stat-number">10+</div>
-                <div class="stat-label">Public Repos</div>
+        <div class="telemetry-panel">
+            <div class="telemetry-grid">
+                <div class="telemetry-tile">
+                    <span class="tile-val">10+</span>
+                    <span class="tile-label">Repositories</span>
+                </div>
+                <div class="telemetry-tile">
+                    <span class="tile-val">200+</span>
+                    <span class="tile-label">Commits Tracked</span>
+                </div>
+                <div class="telemetry-tile">
+                    <span class="tile-val">300+</span>
+                    <span class="tile-label">Contributions</span>
+                </div>
+                <div class="telemetry-tile">
+                    <span class="tile-val text-emerald">2022</span>
+                    <span class="tile-label">Git Member Since</span>
+                </div>
             </div>
-            <div class="github-stat-card">
-                <div class="stat-number">200+</div>
-                <div class="stat-label">Commits This Year</div>
-            </div>
-            <div class="github-stat-card">
-                <div class="stat-number">300+</div>
-                <div class="stat-label">Total Contributions</div>
-            </div>
-            <div class="github-stat-card">
-                <div class="stat-number">2022</div>
-                <div class="stat-label">Active Since</div>
-            </div>
-        </div>
 
-        <!-- Top Languages Card -->
-        <div class="lang-bar-card">
-            <div class="lang-header">TOP LANGUAGES</div>
-            <div class="lang-bar">
-                <div class="bar-segment bar-flutter" style="width: 35%;"></div>
-                <div class="bar-segment bar-php" style="width: 25%;"></div>
-                <div class="bar-segment bar-astro" style="width: 20%;"></div>
-                <div class="bar-segment bar-python" style="width: 12%;"></div>
-                <div class="bar-segment bar-js" style="width: 8%;"></div>
+            <div class="breakdown-wrapper">
+                <div class="breakdown-title">SYSTEM LANGUAGE DENSITY</div>
+                <div class="ratio-bar">
+                    <div class="seg seg-flutter" style="width: 35%;"></div>
+                    <div class="seg seg-php" style="width: 25%;"></div>
+                    <div class="seg seg-astro" style="width: 20%;"></div>
+                    <div class="seg seg-python" style="width: 12%;"></div>
+                    <div class="seg seg-js" style="width: 8%;"></div>
+                </div>
+                <div class="ratio-legend">
+                    <span class="legend-unit"><span class="legend-dot seg-flutter"></span> Flutter / Dart (35%)</span>
+                    <span class="legend-unit"><span class="legend-dot seg-php"></span> PHP / Laravel (25%)</span>
+                    <span class="legend-unit"><span class="legend-dot seg-astro"></span> Astro (20%)</span>
+                    <span class="legend-unit"><span class="legend-dot seg-python"></span> Python (12%)</span>
+                    <span class="legend-unit"><span class="legend-dot seg-js"></span> JavaScript (8%)</span>
+                </div>
             </div>
-            <div class="lang-legend">
-                <span class="legend-item"><span class="dot dot-flutter"></span> Dart / Flutter 35%</span>
-                <span class="legend-item"><span class="dot dot-php"></span> PHP / Laravel 25%</span>
-                <span class="legend-item"><span class="dot dot-astro"></span> Astro 20%</span>
-                <span class="legend-item"><span class="dot dot-python"></span> Python 12%</span>
-                <span class="legend-item"><span class="dot dot-js"></span> JavaScript 8%</span>
-            </div>
-        </div>
 
-        <!-- GitHub Profile Link Button -->
-        <div style="text-align: center; margin-top: 2rem;">
-            <a href="https://github.com/teojuncheng" target="_blank" class="btn btn-github">
-                <span style="font-size: 1.1rem;">💻</span> View GitHub Profile →
-            </a>
+            <div class="telemetry-cta">
+                <a href="https://github.com/teojuncheng" target="_blank" rel="noopener noreferrer" class="btn btn-emerald">
+                    Inspect GitHub Repositories ↗
+                </a>
+            </div>
         </div>
     </section>
 
 </Layout>
 
 <style>
-    /* Header */
+    /* Hero */
     .projects-hero {
-        padding: 5rem 0 2rem;
-        max-width: 820px;
+        padding: 5rem 0 2.5rem;
+        max-width: 860px;
     }
 
-    .terminal-tag {
+    .section-tag {
         font-family: 'JetBrains Mono', monospace;
-        color: #38bdf8;
-        font-size: 0.9rem;
-        font-weight: 600;
+        font-size: 0.8rem;
+        color: #10b981;
+        letter-spacing: 0.1em;
         margin-bottom: 0.75rem;
-        letter-spacing: 0.05em;
     }
 
-    .page-title {
-        font-size: 3.25rem;
+    .hero-title {
+        font-size: 2.85rem;
         font-weight: 800;
         color: #ffffff;
-        line-height: 1.15;
-        margin-bottom: 1.25rem;
+        line-height: 1.2;
         letter-spacing: -0.03em;
+        margin-bottom: 1.25rem;
     }
 
-    .highlight {
-        color: #38bdf8;
+    .gradient-text {
+        background: linear-gradient(135deg, #10b981 0%, #38bdf8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .hero-intro {
@@ -191,254 +262,308 @@ import Layout from '../layouts/Layout.astro';
         line-height: 1.7;
     }
 
-    .divider {
-        height: 1px;
-        background-color: #1e293b;
-        margin: 2rem 0 3.5rem;
-    }
-
-    /* Content Sections */
-    .content-section {
-        margin-bottom: 4.5rem;
+    /* Section Structure */
+    .section-block {
+        margin-top: 3.5rem;
+        margin-bottom: 5.5rem;
     }
 
     .section-heading {
-        font-size: 2rem;
+        font-size: 1.85rem;
         font-weight: 800;
         color: #ffffff;
-        margin-bottom: 2rem;
         letter-spacing: -0.02em;
+        margin-bottom: 2rem;
     }
 
-    /* Projects Grid */
-    .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 1.5rem;
+    /* Projects Stack */
+    .projects-stack {
+        display: flex;
+        flex-direction: column;
+        gap: 1.75rem;
     }
 
     .project-card {
         background-color: #0c1222;
         border: 1px solid #1e293b;
-        border-radius: 12px;
-        padding: 1.75rem;
+        border-radius: 8px;
+        padding: 2.25rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        transition: border-color 0.2s ease, transform 0.2s ease;
+        gap: 1.5rem;
+        transition: border-color 0.2s ease;
     }
 
     .project-card:hover {
-        border-color: #38bdf8;
-        transform: translateY(-2px);
+        border-color: #10b981;
     }
 
-    .card-badges {
+    .card-header {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         flex-wrap: wrap;
-        gap: 0.5rem;
-        margin-bottom: 1rem;
+        gap: 0.75rem;
+        border-bottom: 1px solid #162032;
+        padding-bottom: 1rem;
     }
 
-    .badge {
+    .project-classification {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .type-pill {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.72rem;
+        color: #94a3b8;
+        background-color: #162032;
+        padding: 0.25rem 0.6rem;
+        border-radius: 4px;
+        letter-spacing: 0.05em;
+    }
+
+    .status-pill {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.72rem;
+        padding: 0.25rem 0.6rem;
+        border-radius: 4px;
+        font-weight: 600;
+    }
+
+    .status-complete {
+        background-color: rgba(56, 189, 248, 0.1);
+        color: #38bdf8;
+        border: 1px solid rgba(56, 189, 248, 0.25);
+    }
+
+    .status-prod {
+        background-color: rgba(16, 185, 129, 0.1);
+        color: #34d399;
+        border: 1px solid rgba(16, 185, 129, 0.25);
+    }
+
+    .status-prototype {
+        background-color: rgba(168, 85, 247, 0.1);
+        color: #c084fc;
+        border: 1px solid rgba(168, 85, 247, 0.25);
+    }
+
+    .access-badge {
         font-family: 'JetBrains Mono', monospace;
         font-size: 0.75rem;
-        font-weight: 600;
-        padding: 0.25rem 0.65rem;
-        border-radius: 20px;
+        color: #64748b;
+    }
+
+    .repo-link {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.78rem;
+        color: #34d399;
         text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        padding: 0.25rem 0.6rem;
+        background-color: rgba(16, 185, 129, 0.1);
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        border-radius: 4px;
+        transition: all 0.2s ease;
     }
 
-    .badge-blue {
-        background-color: rgba(56, 189, 248, 0.15);
-        color: #38bdf8;
-        border: 1px solid rgba(56, 189, 248, 0.3);
+    .repo-link:hover {
+        background-color: #10b981;
+        color: #022c22;
     }
 
-    .badge-green {
-        background-color: rgba(34, 197, 94, 0.15);
-        color: #4ade80;
-        border: 1px solid rgba(34, 197, 94, 0.3);
-    }
-
-    .badge-cyan {
-        background-color: rgba(6, 182, 212, 0.15);
-        color: #22d3ee;
-        border: 1px solid rgba(6, 182, 212, 0.3);
-    }
-
-    .badge-purple {
-        background-color: rgba(168, 85, 247, 0.15);
-        color: #c084fc;
-        border: 1px solid rgba(168, 85, 247, 0.3);
-    }
-
-    .badge-muted {
-        background-color: #1e293b;
-        color: #94a3b8;
-    }
-
-    .badge-link {
-        background-color: #1e293b;
-        color: #38bdf8;
-        border: 1px solid #38bdf8;
-        transition: background-color 0.2s ease;
-    }
-
-    .badge-link:hover {
-        background-color: #38bdf8;
-        color: #082f49;
-    }
-
-    .project-title {
+    .project-name {
         color: #ffffff;
-        font-size: 1.25rem;
+        font-size: 1.35rem;
         font-weight: 700;
         margin-bottom: 0.75rem;
-        line-height: 1.35;
+        line-height: 1.3;
     }
 
     .project-desc {
         color: #94a3b8;
-        font-size: 0.92rem;
-        line-height: 1.6;
+        font-size: 0.95rem;
+        line-height: 1.7;
         margin-bottom: 1.5rem;
     }
 
-    .tech-tags {
+    /* Architecture Highlights */
+    .architecture-highlights {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+        background-color: #090d16;
+        border: 1px solid #162032;
+        border-radius: 6px;
+        padding: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .arch-item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .arch-label {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.7rem;
+        color: #10b981;
+        letter-spacing: 0.06em;
+    }
+
+    .arch-value {
+        color: #e2e8f0;
+        font-size: 0.88rem;
+        font-weight: 500;
+    }
+
+    /* Card Footer & Tags */
+    .card-footer {
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
-        margin-top: auto;
+        border-top: 1px solid #162032;
+        padding-top: 1.25rem;
     }
 
-    .tag {
+    .tech-tag {
         font-family: 'JetBrains Mono', monospace;
         font-size: 0.78rem;
-        background-color: #1e293b;
+        background-color: #162032;
         color: #cbd5e1;
-        padding: 0.25rem 0.65rem;
-        border-radius: 6px;
+        padding: 0.35rem 0.75rem;
+        border-radius: 4px;
+        border: 1px solid #223249;
     }
 
-    .tag-highlight {
-        border: 1px solid rgba(56, 189, 248, 0.4);
-        color: #38bdf8;
+    .tag-featured {
+        border-color: rgba(16, 185, 129, 0.35);
+        color: #34d399;
     }
 
-    /* GitHub Activity */
-    .github-stats-grid {
+    /* Telemetry Panel */
+    .telemetry-panel {
+        background-color: #0c1222;
+        border: 1px solid #1e293b;
+        border-radius: 8px;
+        padding: 2.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .telemetry-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         gap: 1.25rem;
-        margin-bottom: 1.5rem;
     }
 
-    .github-stat-card {
-        background-color: #0c1222;
-        border: 1px solid #1e293b;
-        border-radius: 12px;
-        padding: 1.75rem 1.5rem;
-        text-align: center;
+    .telemetry-tile {
+        background-color: #090d16;
+        border: 1px solid #162032;
+        border-radius: 6px;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
     }
 
-    .stat-number {
-        font-size: 2.25rem;
-        font-weight: 800;
-        color: #38bdf8;
-        margin-bottom: 0.35rem;
-    }
-
-    .stat-label {
-        color: #94a3b8;
-        font-size: 0.9rem;
-    }
-
-    /* Language Bar */
-    .lang-bar-card {
-        background-color: #0c1222;
-        border: 1px solid #1e293b;
-        border-radius: 12px;
-        padding: 1.75rem 2rem;
-    }
-
-    .lang-header {
+    .tile-val {
         font-family: 'JetBrains Mono', monospace;
-        font-size: 0.85rem;
-        color: #38bdf8;
-        font-weight: 700;
-        margin-bottom: 1rem;
+        font-size: 1.85rem;
+        font-weight: 800;
+        color: #f8fafc;
+    }
+
+    .tile-label {
+        font-size: 0.8rem;
+        color: #64748b;
+        text-transform: uppercase;
         letter-spacing: 0.05em;
     }
 
-    .lang-bar {
+    .text-emerald {
+        color: #34d399 !important;
+    }
+
+    /* Breakdown Bar */
+    .breakdown-title {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.75rem;
+        color: #10b981;
+        letter-spacing: 0.08em;
+        margin-bottom: 0.75rem;
+    }
+
+    .ratio-bar {
         display: flex;
-        height: 10px;
-        border-radius: 5px;
+        height: 8px;
+        border-radius: 4px;
         overflow: hidden;
         margin-bottom: 1.25rem;
-        background-color: #1e293b;
+        background-color: #162032;
     }
 
-    .bar-segment {
-        height: 100%;
-    }
+    .seg { height: 100%; }
+    .seg-flutter { background-color: #0284c7; }
+    .seg-php { background-color: #8b5cf6; }
+    .seg-astro { background-color: #f97316; }
+    .seg-python { background-color: #10b981; }
+    .seg-js { background-color: #eab308; }
 
-    .bar-flutter { background-color: #02569b; }
-    .bar-php { background-color: #777bb4; }
-    .bar-astro { background-color: #ff5d01; }
-    .bar-python { background-color: #3572a5; }
-    .bar-js { background-color: #f1e05a; }
-
-    .lang-legend {
+    .ratio-legend {
         display: flex;
         flex-wrap: wrap;
-        gap: 1.5rem;
-        font-size: 0.85rem;
+        gap: 1.25rem;
+        font-size: 0.82rem;
         color: #94a3b8;
     }
 
-    .legend-item {
+    .legend-unit {
         display: flex;
         align-items: center;
-        gap: 0.5rem;
+        gap: 0.45rem;
     }
 
-    .dot {
-        width: 10px;
-        height: 10px;
+    .legend-dot {
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
         display: inline-block;
     }
 
-    .dot-flutter { background-color: #02569b; }
-    .dot-php { background-color: #777bb4; }
-    .dot-astro { background-color: #ff5d01; }
-    .dot-python { background-color: #3572a5; }
-    .dot-js { background-color: #f1e05a; }
+    .telemetry-cta {
+        display: flex;
+        justify-content: flex-start;
+        border-top: 1px solid #162032;
+        padding-top: 1.5rem;
+    }
 
-    /* Buttons */
+    /* Button */
     .btn {
         display: inline-flex;
         align-items: center;
-        gap: 0.5rem;
-        padding: 0.75rem 1.75rem;
-        border-radius: 8px;
-        font-size: 0.95rem;
+        padding: 0.75rem 1.6rem;
+        border-radius: 6px;
+        font-size: 0.92rem;
         font-weight: 600;
         text-decoration: none;
         transition: all 0.2s ease;
     }
 
-    .btn-github {
-        background-color: #0c1222;
-        border: 1px solid #1e293b;
-        color: #f8fafc;
+    .btn-emerald {
+        background-color: #10b981;
+        color: #022c22;
     }
 
-    .btn-github:hover {
-        border-color: #38bdf8;
-        color: #38bdf8;
+    .btn-emerald:hover {
+        background-color: #34d399;
         transform: translateY(-2px);
+        box-shadow: 0 4px 18px rgba(16, 185, 129, 0.3);
     }
 </style>
