@@ -6,7 +6,7 @@ interface Props {
 const { title } = Astro.props;
 const currentPath = Astro.url.pathname;
 
-// 1. Import the global CSS file directly into the layout
+// 1. Import the global CSS stylesheet
 import '../styles/global.css';
 ---
 
@@ -16,38 +16,169 @@ import '../styles/global.css';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title}</title>
-    <!-- Google Fonts for crisp modern typography -->
+    
+    <!-- Custom Favicon (Resolves from public/favicon.svg) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Google Fonts for Editorial & Monospace Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Top Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="/" class="brand">&lt;TeoJunCheng /&gt;</a>
-            <ul class="nav-links">
-                <li><a href="/" class={currentPath === "/" ? "active" : ""}>Home</a></li>
-                <li><a href="/about" class={currentPath.startsWith("/about") ? "active" : ""}>About</a></li>
-                <li><a href="/projects" class={currentPath.startsWith("/projects") ? "active" : ""}>Projects</a></li>
-                <li><a href="/career" class={currentPath.startsWith("/career") ? "active" : ""}>Career</a></li>
-                <li><a href="/contact" class={currentPath.startsWith("/contact") ? "active" : ""}>Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Main Navigation Bar -->
+    <header class="navbar-wrapper">
+        <div class="site-container nav-content">
+            <a href="/" class="brand-badge">
+                <span class="brand-slash">//</span>
+                <span class="brand-text">teo.dev</span>
+            </a>
 
-    <!-- Main Body Container -->
-    <main class="container">
+            <nav class="nav-links" aria-label="Main Navigation">
+                <a href="/" class={currentPath === "/" ? "nav-item active" : "nav-item"}>Index</a>
+                <a href="/about" class={currentPath.startsWith("/about") ? "nav-item active" : "nav-item"}>About</a>
+                <a href="/projects" class={currentPath.startsWith("/projects") ? "nav-item active" : "nav-item"}>Projects</a>
+                <a href="/career" class={currentPath.startsWith("/career") ? "nav-item active" : "nav-item"}>Career</a>
+                <a href="/contact" class={currentPath.startsWith("/contact") ? "nav-item active" : "nav-item"}>Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Injection -->
+    <main class="site-container main-wrapper">
         <slot />
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>© 2026 Teo Jun Cheng • Built with Astro & Hosted on GitHub Pages</p>
+    <!-- Global System Footer -->
+    <footer class="footer-wrapper">
+        <div class="site-container footer-content">
+            <div class="footer-left">
+                <span class="footer-status-dot"></span>
+                <span>System operational • Hosted on GitHub Pages</span>
+            </div>
+            <div class="footer-right">
+                <p>© 2026 Teo Jun Cheng. Crafted with Astro SSG.</p>
+            </div>
         </div>
     </footer>
 
 </body>
 </html>
+
+<style>
+    /* Navbar Styles */
+    .navbar-wrapper {
+        background-color: rgba(6, 9, 19, 0.85);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid #162032;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        height: 68px;
+        display: flex;
+        align-items: center;
+    }
+
+    .site-container {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        width: 100%;
+    }
+
+    .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Brand Logo */
+    .brand-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #ffffff;
+        text-decoration: none;
+        letter-spacing: -0.02em;
+        transition: opacity 0.2s ease;
+    }
+
+    .brand-badge:hover {
+        opacity: 0.85;
+    }
+
+    .brand-slash {
+        color: #10b981;
+    }
+
+    /* Navigation Links */
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .nav-item {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.85rem;
+        color: #94a3b8;
+        text-decoration: none;
+        padding: 0.45rem 0.85rem;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+    }
+
+    .nav-item:hover {
+        color: #f1f5f9;
+        background-color: #0c1222;
+    }
+
+    .nav-item.active {
+        color: #34d399;
+        background-color: rgba(16, 185, 129, 0.1);
+        border: 1px solid rgba(16, 185, 129, 0.25);
+    }
+
+    /* Main Slot */
+    .main-wrapper {
+        min-height: calc(100vh - 140px);
+    }
+
+    /* Footer */
+    .footer-wrapper {
+        border-top: 1px solid #162032;
+        background-color: #060913;
+        padding: 2.25rem 0;
+        margin-top: auto;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.8rem;
+        color: #64748b;
+    }
+
+    .footer-left {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .footer-status-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #10b981;
+        box-shadow: 0 0 6px #10b981;
+    }
+</style>
