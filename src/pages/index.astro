@@ -106,7 +106,7 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <!-- 4. HIGHLIGHTED BUILDS -->
-    <section class="section-container">
+    <section class="section-container" style="margin-bottom: 6rem;">
         <div class="section-tag">02 // CASE STUDIES</div>
         <h2 class="section-title">Selected Engineering Projects</h2>
 
@@ -144,50 +144,6 @@ import Layout from '../layouts/Layout.astro';
                     <a href="/projects" class="inline-arrow-btn">Read Case Study ↗</a>
                 </div>
             </article>
-        </div>
-    </section>
-
-    <!-- 5. DIRECT NAVIGATION PANELS -->
-    <section class="section-container" style="margin-bottom: 6rem;">
-        <div class="section-tag">03 // INDEX</div>
-        <h2 class="section-title">Directory Navigation</h2>
-
-        <div class="nav-grid-boxes">
-            <a href="/about" class="nav-box">
-                <div class="nav-box-header">
-                    <span class="nav-box-num">01</span>
-                    <span class="nav-arrow">→</span>
-                </div>
-                <h4 class="nav-box-title">About Me</h4>
-                <p class="nav-box-sub">Philosophy, background, education, and lifestyle pursuits.</p>
-            </a>
-
-            <a href="/projects" class="nav-box">
-                <div class="nav-box-header">
-                    <span class="nav-box-num">02</span>
-                    <span class="nav-arrow">→</span>
-                </div>
-                <h4 class="nav-box-title">All Projects</h4>
-                <p class="nav-box-sub">Full repository index, hackathon projects, and application specs.</p>
-            </a>
-
-            <a href="/career" class="nav-box">
-                <div class="nav-box-header">
-                    <span class="nav-box-num">03</span>
-                    <span class="nav-arrow">→</span>
-                </div>
-                <h4 class="nav-box-title">Career & CV</h4>
-                <p class="nav-box-sub">Professional internship history, milestones, and embedded resume.</p>
-            </a>
-
-            <a href="/contact" class="nav-box">
-                <div class="nav-box-header">
-                    <span class="nav-box-num">04</span>
-                    <span class="nav-arrow">→</span>
-                </div>
-                <h4 class="nav-box-title">Get In Touch</h4>
-                <p class="nav-box-sub">Direct communication channels, links, and meeting inquiries.</p>
-            </a>
         </div>
     </section>
 
@@ -544,61 +500,5 @@ import Layout from '../layouts/Layout.astro';
     .inline-arrow-btn:hover {
         background-color: rgba(16, 185, 129, 0.1);
         border-color: #10b981;
-    }
-
-    /* Navigation Grid */
-    .nav-grid-boxes {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-        gap: 1.25rem;
-    }
-
-    .nav-box {
-        background-color: #0c1222;
-        border: 1px solid #1e293b;
-        border-radius: 8px;
-        padding: 1.5rem;
-        text-decoration: none;
-        transition: all 0.2s ease;
-    }
-
-    .nav-box:hover {
-        border-color: #10b981;
-        transform: translateY(-2px);
-    }
-
-    .nav-box-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 1rem;
-    }
-
-    .nav-box-num {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.8rem;
-        color: #64748b;
-    }
-
-    .nav-arrow {
-        color: #10b981;
-        font-size: 1.1rem;
-        transition: transform 0.2s ease;
-    }
-
-    .nav-box:hover .nav-arrow {
-        transform: translateX(3px);
-    }
-
-    .nav-box-title {
-        color: #ffffff;
-        font-size: 1.1rem;
-        margin-bottom: 0.35rem;
-    }
-
-    .nav-box-sub {
-        color: #94a3b8;
-        font-size: 0.85rem;
-        line-height: 1.5;
     }
 </style>
