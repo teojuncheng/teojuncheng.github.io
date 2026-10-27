@@ -30,59 +30,31 @@ import Layout from '../layouts/Layout.astro';
             <div class="console-content">
                 <p><span class="prompt">$</span> whoami</p>
                 <p class="console-res">teo_jun_cheng --role "Software Engineer"</p>
-                <p><span class="prompt">$</span> cat academics.json</p>
-                <p class="console-res">&#123; "cgpa": 3.74, "awards": "6x Dean's List", "uni": "UMS" &#125;</p>
-                <p><span class="prompt">$</span> check --internship</p>
-                <p class="console-res text-emerald">Apploqic Technologies (Flutter / Laravel API)</p>
+                <p><span class="prompt">$</span> contact --email</p>
+                <p class="console-res">teojuncheng11@gmail.com</p>
+                <p><span class="prompt">$</span> contact --phone</p>
+                <p class="console-res text-emerald">+6016-8449036</p>
                 <p><span class="prompt">$</span> locate</p>
                 <p class="console-res">Kuala Lumpur / Kota Kinabalu, MY</p>
             </div>
         </div>
     </section>
 
-    <!-- 2. BENTO OVERVIEW: PHILOSOPHY & PROFILE -->
+    <!-- 2. ENGINEERING PHILOSOPHY -->
     <section class="section-container">
         <div class="section-tag">01 // DOSSIER</div>
-        <h2 class="section-title">Engineering Philosophy & Profile</h2>
+        <h2 class="section-title">Engineering Philosophy</h2>
 
-        <div class="bento-grid">
-            <div class="bento-card bento-wide">
-                <div class="card-kicker">CORE PHILOSOPHY</div>
-                <h3 class="card-heading">Architecting for reliability, scale, and clarity.</h3>
-                <p class="card-body">
-                    I treat software development as an exercise in structural precision. Rather than stitching hasty implementations together, I specialize in architecting decoupled systems — ensuring API interfaces remain independent, predictable, and resilient under production loads.
-                </p>
-                <div class="core-focus-list">
-                    <span class="focus-item">✦ Decoupled REST APIs</span>
-                    <span class="focus-item">✦ Cross-Platform Mobile (Flutter)</span>
-                    <span class="focus-item">✦ Relational Schemas (MySQL)</span>
-                </div>
-            </div>
-
-            <div class="bento-card">
-                <div class="card-kicker">CORE SPECIFICATIONS</div>
-                <ul class="spec-list">
-                    <li>
-                        <span class="spec-key">INSTITUTION</span>
-                        <span class="spec-val">Universiti Malaysia Sabah</span>
-                    </li>
-                    <li>
-                        <span class="spec-key">DIRECT EMAIL</span>
-                        <a href="mailto:teojuncheng11@gmail.com" class="spec-val text-emerald spec-link">teojuncheng11@gmail.com</a>
-                    </li>
-                    <li>
-                        <span class="spec-key">CONTACT NUMBER</span>
-                        <a href="tel:+60168449036" class="spec-val text-emerald spec-link">+6016-8449036</a>
-                    </li>
-                    <li>
-                        <span class="spec-key">RECENT WORK</span>
-                        <span class="spec-val">Apploqic Technologies (Intern)</span>
-                    </li>
-                    <li>
-                        <span class="spec-key">BASE LOCATION</span>
-                        <span class="spec-val">Kuala Lumpur / Kota Kinabalu</span>
-                    </li>
-                </ul>
+        <div class="philosophy-card">
+            <div class="card-kicker">CORE PHILOSOPHY</div>
+            <h3 class="card-heading">Architecting for reliability, scale, and clarity.</h3>
+            <p class="card-body">
+                I treat software development as an exercise in structural precision. Rather than stitching hasty implementations together, I specialize in architecting decoupled systems — ensuring API interfaces remain independent, predictable, and resilient under production loads.
+            </p>
+            <div class="core-focus-list">
+                <span class="focus-item">✦ Decoupled REST APIs</span>
+                <span class="focus-item">✦ Cross-Platform Mobile (Flutter)</span>
+                <span class="focus-item">✦ Relational Schemas (MySQL)</span>
             </div>
         </div>
     </section>
@@ -410,27 +382,14 @@ import Layout from '../layouts/Layout.astro';
         letter-spacing: -0.02em;
     }
 
-    /* Bento Grid */
-    .bento-grid {
-        display: grid;
-        grid-template-columns: 1.4fr 1fr;
-        gap: 1.5rem;
-    }
-
-    @media (max-width: 860px) {
-        .bento-grid {
-            grid-template-columns: 1fr;
-        }
-    }
-
-    .bento-card {
+    /* Philosophy Card */
+    .philosophy-card {
         background-color: #0c1222;
         border: 1px solid #1e293b;
         border-radius: 8px;
-        padding: 2rem;
+        padding: 2.25rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
 
     .card-kicker {
@@ -470,51 +429,6 @@ import Layout from '../layouts/Layout.astro';
         padding: 0.4rem 0.8rem;
         border-radius: 4px;
         border: 1px solid #223249;
-    }
-
-    /* Spec List */
-    .spec-list {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: auto;
-    }
-
-    .spec-list li {
-        display: flex;
-        flex-direction: column;
-        gap: 0.2rem;
-        border-bottom: 1px solid #162032;
-        padding-bottom: 0.75rem;
-    }
-
-    .spec-list li:last-child {
-        border-bottom: none;
-        padding-bottom: 0;
-    }
-
-    .spec-key {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.72rem;
-        color: #64748b;
-        letter-spacing: 0.05em;
-    }
-
-    .spec-val {
-        color: #f1f5f9;
-        font-size: 0.95rem;
-        font-weight: 600;
-    }
-
-    .spec-link {
-        text-decoration: none;
-        transition: opacity 0.2s ease;
-    }
-
-    .spec-link:hover {
-        opacity: 0.8;
-        text-decoration: underline;
     }
 
     /* Domain / Stack Grid */
