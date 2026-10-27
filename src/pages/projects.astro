@@ -9,7 +9,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="section-tag">01 // REPOSITORY</div>
         <h1 class="hero-title">Engineering <span class="gradient-text">Builds & Projects</span>.</h1>
         <p class="hero-intro">
-            A production catalog of full-stack web platforms, decoupled mobile client applications, relational database schemas, and machine learning prototypes.
+            A production catalog of full-stack web platforms, decoupled mobile client applications, relational database schemas, and quantitative market engines.
         </p>
     </header>
 
@@ -19,8 +19,49 @@ import Layout from '../layouts/Layout.astro';
         <h2 class="section-heading">Featured Software Systems</h2>
 
         <div class="projects-stack">
-            
-            <!-- Project 1: ServeTogether -->
+
+            <!-- Project 1: GetWreck -->
+            <article class="project-card">
+                <div class="card-header">
+                    <div class="project-classification">
+                        <span class="type-pill">QUANT & FINTECH</span>
+                        <span class="status-pill status-prod">⚡ Active Build</span>
+                    </div>
+                    <a href="https://github.com/teojuncheng" target="_blank" rel="noopener noreferrer" class="repo-link">
+                        <span>Source Code</span>
+                        <span>↗</span>
+                    </a>
+                </div>
+
+                <div class="card-body">
+                    <h3 class="project-name">GetWreck — Quantitative Market Screener & Trading Terminal</h3>
+                    <p class="project-desc">
+                        A full-stack quantitative screening and market analytics platform designed for equities and momentum setups. Evaluates real-time price action, algorithmic technical indicators, and pattern recognition while interfacing with live broker paper execution APIs.
+                    </p>
+
+                    <div class="architecture-highlights">
+                        <div class="arch-item">
+                            <span class="arch-label">ARCHITECTURE</span>
+                            <span class="arch-value">Decoupled Next.js UI + Python FastAPI Computational Backend</span>
+                        </div>
+                        <div class="arch-item">
+                            <span class="arch-label">INTEGRATIONS</span>
+                            <span class="arch-value">Alpaca Paper Trading API & Market Data Ingestion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <span class="tech-tag tag-featured">Next.js</span>
+                    <span class="tech-tag tag-featured">TypeScript</span>
+                    <span class="tech-tag tag-featured">Python</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">REST APIs</span>
+                    <span class="tech-tag">Vercel / Render</span>
+                </div>
+            </article>
+
+            <!-- Project 2: ServeTogether -->
             <article class="project-card">
                 <div class="card-header">
                     <div class="project-classification">
@@ -57,7 +98,7 @@ import Layout from '../layouts/Layout.astro';
                 </div>
             </article>
 
-            <!-- Project 2: Quotation App -->
+            <!-- Project 3: Quotation App -->
             <article class="project-card">
                 <div class="card-header">
                     <div class="project-classification">
@@ -94,7 +135,7 @@ import Layout from '../layouts/Layout.astro';
                 </div>
             </article>
 
-            <!-- Project 3: Property App -->
+            <!-- Project 4: Property App -->
             <article class="project-card">
                 <div class="card-header">
                     <div class="project-classification">
@@ -131,7 +172,7 @@ import Layout from '../layouts/Layout.astro';
                 </div>
             </article>
 
-            <!-- Project 4: AI Chatbot -->
+            <!-- Project 5: AI Chatbot -->
             <article class="project-card">
                 <div class="card-header">
                     <div class="project-classification">
@@ -181,15 +222,15 @@ import Layout from '../layouts/Layout.astro';
         <div class="telemetry-panel">
             <div class="telemetry-grid">
                 <div class="telemetry-tile">
-                    <span class="tile-val">10+</span>
+                    <span class="tile-val">12+</span>
                     <span class="tile-label">Repositories</span>
                 </div>
                 <div class="telemetry-tile">
-                    <span class="tile-val">200+</span>
+                    <span class="tile-val">250+</span>
                     <span class="tile-label">Commits Tracked</span>
                 </div>
                 <div class="telemetry-tile">
-                    <span class="tile-val">300+</span>
+                    <span class="tile-val">350+</span>
                     <span class="tile-label">Contributions</span>
                 </div>
                 <div class="telemetry-tile">
@@ -201,18 +242,18 @@ import Layout from '../layouts/Layout.astro';
             <div class="breakdown-wrapper">
                 <div class="breakdown-title">SYSTEM LANGUAGE DENSITY</div>
                 <div class="ratio-bar">
-                    <div class="seg seg-flutter" style="width: 35%;"></div>
-                    <div class="seg seg-php" style="width: 25%;"></div>
-                    <div class="seg seg-astro" style="width: 20%;"></div>
-                    <div class="seg seg-python" style="width: 12%;"></div>
-                    <div class="seg seg-js" style="width: 8%;"></div>
+                    <div class="seg seg-flutter" style="width: 30%;"></div>
+                    <div class="seg seg-typescript" style="width: 25%;"></div>
+                    <div class="seg seg-php" style="width: 20%;"></div>
+                    <div class="seg seg-python" style="width: 15%;"></div>
+                    <div class="seg seg-astro" style="width: 10%;"></div>
                 </div>
                 <div class="ratio-legend">
-                    <span class="legend-unit"><span class="legend-dot seg-flutter"></span> Flutter / Dart (35%)</span>
-                    <span class="legend-unit"><span class="legend-dot seg-php"></span> PHP / Laravel (25%)</span>
-                    <span class="legend-unit"><span class="legend-dot seg-astro"></span> Astro (20%)</span>
-                    <span class="legend-unit"><span class="legend-dot seg-python"></span> Python (12%)</span>
-                    <span class="legend-unit"><span class="legend-dot seg-js"></span> JavaScript (8%)</span>
+                    <span class="legend-unit"><span class="legend-dot seg-flutter"></span> Dart / Flutter (30%)</span>
+                    <span class="legend-unit"><span class="legend-dot seg-typescript"></span> TypeScript / React (25%)</span>
+                    <span class="legend-unit"><span class="legend-dot seg-php"></span> PHP / Laravel (20%)</span>
+                    <span class="legend-unit"><span class="legend-dot seg-python"></span> Python / FastAPI (15%)</span>
+                    <span class="legend-unit"><span class="legend-dot seg-astro"></span> Astro (10%)</span>
                 </div>
             </div>
 
@@ -511,10 +552,10 @@ import Layout from '../layouts/Layout.astro';
 
     .seg { height: 100%; }
     .seg-flutter { background-color: #0284c7; }
+    .seg-typescript { background-color: #38bdf8; }
     .seg-php { background-color: #8b5cf6; }
     .seg-astro { background-color: #f97316; }
     .seg-python { background-color: #10b981; }
-    .seg-js { background-color: #eab308; }
 
     .ratio-legend {
         display: flex;
