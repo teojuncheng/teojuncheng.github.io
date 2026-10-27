@@ -7,10 +7,6 @@ import Layout from '../layouts/Layout.astro';
     <!-- 1. SPLIT HERO SECTION WITH TERMINAL CARD -->
     <section class="hero-split">
         <div class="hero-intro">
-            <div class="status-badge">
-                <span class="pulse-indicator"></span>
-                <span>SYSTEM ONLINE • OPEN TO ROLES (SEPT 2026)</span>
-            </div>
             <h1 class="hero-headline">Engineering robust systems from <span class="gradient-text">backend to client</span>.</h1>
             <p class="hero-bio">
                 I'm <strong>Teo Jun Cheng</strong>, a full-stack software engineer focused on building decoupled APIs, scalable mobile applications, and resilient digital architectures.
@@ -44,27 +40,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-    <!-- 2. METRIC TILES ROW -->
-    <section class="metrics-grid">
-        <div class="metric-card">
-            <span class="metric-num">3.74</span>
-            <span class="metric-label">Cumulative CGPA</span>
-        </div>
-        <div class="metric-card">
-            <span class="metric-num">06</span>
-            <span class="metric-label">Dean's List Honors</span>
-        </div>
-        <div class="metric-card">
-            <span class="metric-num">100%</span>
-            <span class="metric-label">Decoupled Architecture</span>
-        </div>
-        <div class="metric-card">
-            <span class="metric-num text-emerald">2026</span>
-            <span class="metric-label">Full-Time Availability</span>
-        </div>
-    </section>
-
-    <!-- 3. BENTO OVERVIEW: PHILOSOPHY & PROFILE -->
+    <!-- 2. BENTO OVERVIEW: PHILOSOPHY & PROFILE -->
     <section class="section-container">
         <div class="section-tag">01 // DOSSIER</div>
         <h2 class="section-title">Engineering Philosophy & Profile</h2>
@@ -91,12 +67,12 @@ import Layout from '../layouts/Layout.astro';
                         <span class="spec-val">Universiti Malaysia Sabah</span>
                     </li>
                     <li>
-                        <span class="spec-key">MAJOR</span>
-                        <span class="spec-val">BCompSc. Software Engineering</span>
+                        <span class="spec-key">DIRECT EMAIL</span>
+                        <a href="mailto:teojuncheng11@gmail.com" class="spec-val text-emerald spec-link">teojuncheng11@gmail.com</a>
                     </li>
                     <li>
-                        <span class="spec-key">PRIMARY TRACK</span>
-                        <span class="spec-val text-emerald">Full-Stack & Mobile Architecture</span>
+                        <span class="spec-key">CONTACT NUMBER</span>
+                        <a href="tel:+60168449036" class="spec-val text-emerald spec-link">+6016-8449036</a>
                     </li>
                     <li>
                         <span class="spec-key">RECENT WORK</span>
@@ -104,14 +80,14 @@ import Layout from '../layouts/Layout.astro';
                     </li>
                     <li>
                         <span class="spec-key">BASE LOCATION</span>
-                        <span class="spec-val text-emerald">Kuala Lumpur / Kota Kinabalu</span>
+                        <span class="spec-val">Kuala Lumpur / Kota Kinabalu</span>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- 4. DOMAIN EXPERTISE & TECH STACK -->
+    <!-- 3. DOMAIN EXPERTISE & TECH STACK -->
     <section class="section-container">
         <div class="section-tag">02 // DOMAIN EXPERTISE</div>
         <h2 class="section-title">Technical Capabilities</h2>
@@ -152,7 +128,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-    <!-- 5. CHRONOLOGICAL MILESTONE LOG -->
+    <!-- 4. CHRONOLOGICAL MILESTONE LOG -->
     <section class="section-container">
         <div class="section-tag">03 // TRAJECTORY</div>
         <h2 class="section-title">Milestones & Technical Evolution</h2>
@@ -179,7 +155,7 @@ import Layout from '../layouts/Layout.astro';
                 <div class="milestone-body">
                     <h3 class="milestone-role">Undergraduate Degree <span class="milestone-org">@ Universiti Malaysia Sabah</span></h3>
                     <p class="milestone-desc">
-                        Underwent comprehensive software engineering training spanning system design patterns, algorithmic optimization, and data structures. Maintained a 3.74 CGPA with 6 consecutive Dean's List honors. Built ServeTogether as FYP and competed in the UM Hackathon AI track.
+                        Underwent comprehensive software engineering training spanning system design patterns, algorithmic optimization, and data structures. Built ServeTogether as FYP and competed in the UM Hackathon AI track.
                     </p>
                     <div class="tag-row">
                         <span class="mono-badge">Distributed Systems</span>
@@ -201,7 +177,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-    <!-- 6. PERSONAL PURSUITS (BEYOND CODE) -->
+    <!-- 5. PERSONAL PURSUITS (BEYOND CODE) -->
     <section class="section-container">
         <div class="section-tag">04 // DIMENSIONS</div>
         <h2 class="section-title">Discipline & Pursuits Outside the Terminal</h2>
@@ -245,7 +221,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-    <!-- 7. GUIDING AXIOMS -->
+    <!-- 6. GUIDING AXIOMS -->
     <section class="section-container" style="margin-bottom: 6rem;">
         <div class="section-tag">05 // PRINCIPLES</div>
         <h2 class="section-title">Guiding Axioms</h2>
@@ -271,7 +247,7 @@ import Layout from '../layouts/Layout.astro';
         grid-template-columns: 1.25fr 1fr;
         gap: 3rem;
         align-items: center;
-        padding: 4.5rem 0 3.5rem;
+        padding: 5rem 0 4rem;
     }
 
     @media (max-width: 860px) {
@@ -280,29 +256,6 @@ import Layout from '../layouts/Layout.astro';
             gap: 2rem;
             padding: 3rem 0;
         }
-    }
-
-    .status-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.6rem;
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.78rem;
-        letter-spacing: 0.08em;
-        background-color: rgba(16, 185, 129, 0.1);
-        color: #10b981;
-        border: 1px solid rgba(16, 185, 129, 0.25);
-        padding: 0.35rem 0.85rem;
-        border-radius: 4px;
-        margin-bottom: 1.25rem;
-    }
-
-    .pulse-indicator {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background-color: #10b981;
-        box-shadow: 0 0 8px #10b981;
     }
 
     .hero-headline {
@@ -436,38 +389,6 @@ import Layout from '../layouts/Layout.astro';
         color: #34d399 !important;
     }
 
-    /* Metrics Row */
-    .metrics-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 1.25rem;
-        margin-bottom: 5rem;
-    }
-
-    .metric-card {
-        background-color: #0c1222;
-        border: 1px solid #1e293b;
-        border-radius: 8px;
-        padding: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.3rem;
-    }
-
-    .metric-num {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 2.2rem;
-        font-weight: 800;
-        color: #f8fafc;
-    }
-
-    .metric-label {
-        font-size: 0.85rem;
-        color: #64748b;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-    }
-
     /* Section Layout */
     .section-container {
         margin-bottom: 5rem;
@@ -584,6 +505,16 @@ import Layout from '../layouts/Layout.astro';
         color: #f1f5f9;
         font-size: 0.95rem;
         font-weight: 600;
+    }
+
+    .spec-link {
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+    }
+
+    .spec-link:hover {
+        opacity: 0.8;
+        text-decoration: underline;
     }
 
     /* Domain / Stack Grid */
