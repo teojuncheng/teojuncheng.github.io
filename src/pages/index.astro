@@ -16,8 +16,8 @@ import Layout from '../layouts/Layout.astro';
                 I'm <strong>Teo Jun Cheng</strong>, a full-stack software engineer focused on building decoupled APIs, scalable mobile applications, and resilient digital architectures.
             </p>
             <div class="cta-row">
-                <a href="/projects" class="btn btn-emerald">Explore Solutions →</a>
-                <a href="/career" class="btn btn-ghost">View Credentials</a>
+                <a href="/projects" class="btn btn-emerald">Explore Projects →</a>
+                <a href="/career" class="btn btn-ghost">View Experience</a>
             </div>
         </div>
 
@@ -95,16 +95,16 @@ import Layout from '../layouts/Layout.astro';
                         <span class="spec-val">BCompSc. Software Engineering</span>
                     </li>
                     <li>
-                        <span class="spec-key">ACADEMIC STANDING</span>
-                        <span class="spec-val text-emerald">3.74 CGPA (6× Dean's List)</span>
+                        <span class="spec-key">PRIMARY TRACK</span>
+                        <span class="spec-val text-emerald">Full-Stack & Mobile Architecture</span>
                     </li>
                     <li>
-                        <span class="spec-key">EXPERIENCE</span>
-                        <span class="spec-val">Intern @ Apploqic Technologies</span>
+                        <span class="spec-key">RECENT WORK</span>
+                        <span class="spec-val">Apploqic Technologies (Intern)</span>
                     </li>
                     <li>
-                        <span class="spec-key">AVAILABILITY</span>
-                        <span class="spec-val text-emerald">September 2026 (Full-Time)</span>
+                        <span class="spec-key">BASE LOCATION</span>
+                        <span class="spec-val text-emerald">Kuala Lumpur / Kota Kinabalu</span>
                     </li>
                 </ul>
             </div>
@@ -201,49 +201,9 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-    <!-- 6. HIGHLIGHTED BUILDS -->
+    <!-- 6. PERSONAL PURSUITS (BEYOND CODE) -->
     <section class="section-container">
-        <div class="section-tag">04 // CASE STUDIES</div>
-        <h2 class="section-title">Selected Engineering Projects</h2>
-
-        <div class="projects-list">
-            <article class="project-entry">
-                <div class="project-meta">
-                    <span class="project-category">FULL STACK • FYP</span>
-                    <h3 class="project-heading">ServeTogether — Smart Volunteer Platform</h3>
-                    <p class="project-overview">
-                        Engineered a centralized volunteer management web platform equipped with dynamic recommendation algorithms to match participant preferences with active service initiatives.
-                    </p>
-                    <div class="tech-inline">
-                        <span>PHP</span> • <span>MySQL</span> • <span>JavaScript</span> • <span>CSS3</span>
-                    </div>
-                </div>
-                <div class="project-action-link">
-                    <a href="/projects" class="inline-arrow-btn">Read Case Study ↗</a>
-                </div>
-            </article>
-
-            <article class="project-entry">
-                <div class="project-meta">
-                    <span class="project-category">MOBILE CLIENT • APPLOQIC</span>
-                    <h3 class="project-heading">Client Quotation & Estimator Engine</h3>
-                    <p class="project-overview">
-                        A decoupled mobile application allowing corporate clients to build service specifications, receive instantaneous rate estimates, and securely post requests to remote Laravel APIs.
-                    </p>
-                    <div class="tech-inline">
-                        <span>Flutter</span> • <span>Dart</span> • <span>Laravel REST</span> • <span>MySQL</span>
-                    </div>
-                </div>
-                <div class="project-action-link">
-                    <a href="/projects" class="inline-arrow-btn">Read Case Study ↗</a>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- 7. PERSONAL PURSUITS (BEYOND CODE) -->
-    <section class="section-container">
-        <div class="section-tag">05 // DIMENSIONS</div>
+        <div class="section-tag">04 // DIMENSIONS</div>
         <h2 class="section-title">Discipline & Pursuits Outside the Terminal</h2>
 
         <div class="pursuits-grid">
@@ -285,9 +245,9 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-    <!-- 8. GUIDING AXIOMS -->
+    <!-- 7. GUIDING AXIOMS -->
     <section class="section-container" style="margin-bottom: 6rem;">
-        <div class="section-tag">06 // PRINCIPLES</div>
+        <div class="section-tag">05 // PRINCIPLES</div>
         <h2 class="section-title">Guiding Axioms</h2>
 
         <div class="axioms-grid">
@@ -743,85 +703,6 @@ import Layout from '../layouts/Layout.astro';
         color: #94a3b8;
         padding: 0.25rem 0.6rem;
         border-radius: 4px;
-    }
-
-    /* Selected Projects */
-    .projects-list {
-        display: flex;
-        flex-direction: column;
-        gap: 1.25rem;
-    }
-
-    .project-entry {
-        background-color: #0c1222;
-        border: 1px solid #1e293b;
-        border-radius: 8px;
-        padding: 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 2rem;
-        transition: border-color 0.2s ease;
-    }
-
-    .project-entry:hover {
-        border-color: #10b981;
-    }
-
-    @media (max-width: 768px) {
-        .project-entry {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    }
-
-    .project-category {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.75rem;
-        color: #10b981;
-        letter-spacing: 0.08em;
-    }
-
-    .project-heading {
-        font-size: 1.35rem;
-        color: #ffffff;
-        margin: 0.35rem 0 0.75rem;
-    }
-
-    .project-overview {
-        color: #94a3b8;
-        font-size: 0.95rem;
-        line-height: 1.6;
-        max-width: 650px;
-        margin-bottom: 1rem;
-    }
-
-    .tech-inline {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.8rem;
-        color: #64748b;
-    }
-
-    .tech-inline span {
-        color: #cbd5e1;
-    }
-
-    .inline-arrow-btn {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.88rem;
-        color: #10b981;
-        text-decoration: none;
-        white-space: nowrap;
-        font-weight: 600;
-        padding: 0.6rem 1rem;
-        border-radius: 4px;
-        border: 1px solid rgba(16, 185, 129, 0.3);
-        transition: all 0.2s ease;
-    }
-
-    .inline-arrow-btn:hover {
-        background-color: rgba(16, 185, 129, 0.1);
-        border-color: #10b981;
     }
 
     /* Pursuits Grid */
