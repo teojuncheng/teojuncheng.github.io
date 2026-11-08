@@ -17,88 +17,63 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </header>
 
-    <!-- 2. ACADEMIC HONORS METRICS & EVIDENCE -->
+    <!-- 2. CAREER & ACADEMIC MILESTONES -->
     <section class="section-container">
-        <div class="section-tag">02 // ACADEMIC STANDING</div>
-        <h2 class="section-heading">Honors & Performance</h2>
+        <div class="section-tag">02 // TRACK RECORD</div>
+        <h2 class="section-heading">Experience & Education</h2>
 
-        <!-- Top 2 Metrics Only -->
-        <div class="career-metrics-duo">
-            <div class="metric-item">
-                <span class="metric-val text-emerald">3.76</span>
-                <span class="metric-sub">Cumulative CGPA (UMS)</span>
-            </div>
-            <div class="metric-item">
-                <span class="metric-val">7×</span>
-                <span class="metric-sub">Dean's List Recipient</span>
-            </div>
-        </div>
+        <div class="milestone-log">
 
-        <!-- Academic Image / Evidence Container Directly Below -->
-        <div class="academic-proof-card">
-            <div class="proof-header">
-                <div class="proof-meta">
-                    <span class="proof-badge">UMS • SOFTWARE ENGINEERING</span>
-                    <h3 class="proof-title">Academic Record & Dean's List Distinctions</h3>
-                </div>
-                <span class="proof-tag">Verified Distinctions</span>
-            </div>
-
-            <!-- Drop your image into /public/academics.png or update the src here -->
-            <div class="proof-image-wrapper">
-                <img 
-                    src="/academics.png" 
-                    alt="Teo Jun Cheng Academic Honors & Dean's List Transcript" 
-                    class="proof-img"
-                    onerror="this.parentElement.classList.add('img-placeholder');"
-                />
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. WORK EXPERIENCE -->
-    <section class="section-container">
-        <div class="section-tag">03 // ROLES</div>
-        <h2 class="section-heading">Work Experience</h2>
-
-        <div class="experience-stack">
-            <article class="experience-card">
-                <div class="exp-header">
-                    <div class="exp-identity">
-                        <span class="exp-badge">INTERNSHIP</span>
-                        <h3 class="exp-position">Software Engineer Intern</h3>
-                        <div class="exp-firm">Apploqic Technologies • Kuala Lumpur, Malaysia</div>
-                    </div>
-                    <div class="exp-duration">March 2026 – August 2026</div>
-                </div>
-
-                <div class="exp-content">
-                    <p class="exp-summary">
-                        Contributed to core product development across cross-platform mobile architectures and backend services for diverse business domains.
+            <!-- Apploqic Technologies Internship -->
+            <article class="milestone-entry">
+                <div class="milestone-period">2026 – PRESENT</div>
+                <div class="milestone-body">
+                    <h3 class="milestone-role">Software Engineer Intern <span class="milestone-org">@ Apploqic Technologies</span></h3>
+                    <p class="milestone-desc">
+                        Engineering enterprise mobile applications (Client Quotation Estimator & Property Management) utilizing Flutter paired with decoupled Laravel REST API layers. Managing live production WordPress infrastructures, database optimizations, and client delivery pipelines.
                     </p>
-                    <ul class="exp-bullets">
-                        <li>Architected and delivered decoupled mobile client features (Client Quotation Estimator and Property Management systems) utilizing <strong>Flutter</strong> and <strong>Dart</strong>.</li>
-                        <li>Implemented and consumed structured <strong>Laravel RESTful APIs</strong> with secure authentication and real-time database transactions.</li>
-                        <li>Maintained live client infrastructure on <strong>cPanel</strong>, including staging management, database indexing, and WordPress/Elementor environment deployments.</li>
-                        <li>Collaborated with senior software architects to refine schema design patterns and maintain code reliability.</li>
-                    </ul>
-                </div>
-
-                <div class="exp-footer">
-                    <span class="tech-chip tag-featured">Flutter</span>
-                    <span class="tech-chip tag-featured">Laravel</span>
-                    <span class="tech-chip">Dart</span>
-                    <span class="tech-chip">MySQL</span>
-                    <span class="tech-chip">REST APIs</span>
-                    <span class="tech-chip">cPanel</span>
+                    <div class="tag-row">
+                        <span class="mono-badge">Flutter</span>
+                        <span class="mono-badge">Laravel API</span>
+                        <span class="mono-badge">MySQL</span>
+                        <span class="mono-badge">cPanel</span>
+                    </div>
                 </div>
             </article>
+
+            <!-- Undergraduate Degree Card with CGPA, Dean's List, and Image -->
+            <article class="milestone-entry">
+                <div class="milestone-period">2022 – 2026</div>
+                <div class="milestone-body">
+                    <h3 class="milestone-role">Undergraduate Degree <span class="milestone-org">@ Universiti Malaysia Sabah</span></h3>
+                    <p class="milestone-desc">
+                        Underwent comprehensive software engineering training spanning system design patterns, algorithmic optimization, and data structures. Graduated with a <strong>3.76 CGPA</strong> and received <strong>7× Dean's List honors</strong>. Built ServeTogether as FYP and competed in the UM Hackathon AI track.
+                    </p>
+
+                    <div class="tag-row">
+                        <span class="mono-badge">Distributed Systems</span>
+                        <span class="mono-badge">Full-Stack Web</span>
+                        <span class="mono-badge">Machine Learning</span>
+                    </div>
+
+                    <!-- Credential / Academic Image -->
+                    <div class="academic-image-container">
+                        <img 
+                            src="/academics.png" 
+                            alt="Teo Jun Cheng Academic Honors & Dean's List Record" 
+                            class="academic-img"
+                            onerror="this.parentElement.classList.add('img-placeholder');"
+                        />
+                    </div>
+                </div>
+            </article>
+
         </div>
     </section>
 
-    <!-- 4. EMBEDDED CURRICULUM VITAE -->
+    <!-- 3. EMBEDDED CURRICULUM VITAE -->
     <section class="section-container" style="margin-bottom: 6rem;">
-        <div class="section-tag">04 // RESUME</div>
+        <div class="section-tag">03 // RESUME</div>
         <h2 class="section-heading">Curriculum Vitae</h2>
 
         <div class="pdf-viewer-card">
@@ -125,7 +100,7 @@ import Layout from '../layouts/Layout.astro';
 <style>
     /* Hero */
     .career-hero {
-        padding: 5rem 0 2.5rem;
+        padding: 5rem 0 3.5rem;
         max-width: 860px;
     }
 
@@ -199,117 +174,6 @@ import Layout from '../layouts/Layout.astro';
         color: #ffffff;
     }
 
-    /* Duo Metrics */
-    .career-metrics-duo {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 1.25rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .metric-item {
-        background-color: #0c1222;
-        border: 1px solid #1e293b;
-        border-radius: 8px;
-        padding: 1.5rem 1.75rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-    }
-
-    .metric-val {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 2.2rem;
-        font-weight: 800;
-        color: #f8fafc;
-    }
-
-    .metric-sub {
-        font-size: 0.85rem;
-        color: #64748b;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-    }
-
-    .text-emerald {
-        color: #34d399 !important;
-    }
-
-    /* Academic Proof & Image Card */
-    .academic-proof-card {
-        background-color: #0c1222;
-        border: 1px solid #1e293b;
-        border-radius: 8px;
-        padding: 1.75rem;
-        margin-bottom: 4rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1.25rem;
-    }
-
-    .proof-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 0.75rem;
-        border-bottom: 1px solid #162032;
-        padding-bottom: 1rem;
-    }
-
-    .proof-badge {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.72rem;
-        color: #10b981;
-        letter-spacing: 0.05em;
-    }
-
-    .proof-title {
-        color: #ffffff;
-        font-size: 1.15rem;
-        font-weight: 700;
-        margin-top: 0.25rem;
-    }
-
-    .proof-tag {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.75rem;
-        color: #38bdf8;
-        background-color: rgba(56, 189, 248, 0.1);
-        border: 1px solid rgba(56, 189, 248, 0.25);
-        padding: 0.25rem 0.65rem;
-        border-radius: 4px;
-    }
-
-    .proof-image-wrapper {
-        width: 100%;
-        max-height: 480px;
-        background-color: #090d16;
-        border: 1px solid #162032;
-        border-radius: 6px;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .proof-img {
-        width: 100%;
-        height: auto;
-        max-height: 480px;
-        object-fit: contain;
-        display: block;
-    }
-
-    .img-placeholder::after {
-        content: "Attach credential image to public/academics.png";
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.85rem;
-        color: #64748b;
-        padding: 4rem 1rem;
-        display: block;
-    }
-
     /* Section Structure */
     .section-container {
         margin-bottom: 5.5rem;
@@ -323,109 +187,111 @@ import Layout from '../layouts/Layout.astro';
         margin-bottom: 2rem;
     }
 
-    /* Experience Card */
-    .experience-stack {
+    /* Milestone Entries (Exact Trajectory Design) */
+    .milestone-log {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1.75rem;
     }
 
-    .experience-card {
+    .milestone-entry {
         background-color: #0c1222;
         border: 1px solid #1e293b;
         border-radius: 8px;
-        padding: 2.25rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 2rem;
         transition: border-color 0.2s ease;
     }
 
-    .experience-card:hover {
+    .milestone-entry:hover {
         border-color: #10b981;
     }
 
-    .exp-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        gap: 1rem;
-        border-bottom: 1px solid #162032;
-        padding-bottom: 1.25rem;
+    @media (max-width: 768px) {
+        .milestone-entry {
+            grid-template-columns: 1fr;
+            gap: 0.75rem;
+            padding: 1.5rem;
+        }
     }
 
-    .exp-badge {
+    .milestone-period {
         font-family: 'JetBrains Mono', monospace;
-        font-size: 0.72rem;
+        font-size: 0.9rem;
         color: #10b981;
-        background-color: rgba(16, 185, 129, 0.1);
-        padding: 0.2rem 0.6rem;
-        border-radius: 4px;
-        letter-spacing: 0.05em;
-        display: inline-block;
-        margin-bottom: 0.5rem;
+        font-weight: 600;
     }
 
-    .exp-position {
+    .milestone-role {
         color: #ffffff;
-        font-size: 1.35rem;
+        font-size: 1.25rem;
         font-weight: 700;
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.75rem;
     }
 
-    .exp-firm {
+    .milestone-org {
+        color: #94a3b8;
+        font-weight: 400;
+    }
+
+    .milestone-desc {
         color: #94a3b8;
         font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 1.25rem;
     }
 
-    .exp-duration {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.85rem;
-        color: #64748b;
+    .milestone-desc strong {
+        color: #34d399;
     }
 
-    .exp-summary {
-        color: #cbd5e1;
-        font-size: 0.98rem;
-        line-height: 1.6;
-        margin-bottom: 1rem;
-    }
-
-    .exp-bullets {
-        color: #94a3b8;
-        font-size: 0.93rem;
-        line-height: 1.8;
-        padding-left: 1.25rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .exp-bullets strong {
-        color: #f1f5f9;
-    }
-
-    .exp-footer {
+    .tag-row {
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
-        padding-top: 0.75rem;
+        margin-bottom: 1.5rem;
     }
 
-    .tech-chip {
+    .mono-badge {
         font-family: 'JetBrains Mono', monospace;
         font-size: 0.78rem;
         background-color: #162032;
         color: #94a3b8;
-        padding: 0.35rem 0.75rem;
+        padding: 0.25rem 0.6rem;
         border-radius: 4px;
         border: 1px solid #223249;
     }
 
-    .tag-featured {
-        border-color: rgba(16, 185, 129, 0.35);
-        color: #34d399;
+    /* Embedded Academic Image */
+    .academic-image-container {
+        width: 100%;
+        max-height: 480px;
+        background-color: #090d16;
+        border: 1px solid #162032;
+        border-radius: 6px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .academic-img {
+        width: 100%;
+        height: auto;
+        max-height: 480px;
+        object-fit: contain;
+        display: block;
+    }
+
+    .img-placeholder::after {
+        content: "Place academic photo or transcript in public/academics.png";
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.85rem;
+        color: #64748b;
+        padding: 3rem 1rem;
+        display: block;
     }
 
     /* PDF Viewer */
