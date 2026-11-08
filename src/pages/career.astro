@@ -17,29 +17,48 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </header>
 
-    <!-- 2. SUMMARY METRICS BAR -->
-    <section class="career-metrics">
-        <div class="metric-item">
-            <span class="metric-val text-emerald">3.76</span>
-            <span class="metric-sub">CGPA (UMS)</span>
+    <!-- 2. ACADEMIC HONORS METRICS & EVIDENCE -->
+    <section class="section-container">
+        <div class="section-tag">02 // ACADEMIC STANDING</div>
+        <h2 class="section-heading">Honors & Performance</h2>
+
+        <!-- Top 2 Metrics Only -->
+        <div class="career-metrics-duo">
+            <div class="metric-item">
+                <span class="metric-val text-emerald">3.76</span>
+                <span class="metric-sub">Cumulative CGPA (UMS)</span>
+            </div>
+            <div class="metric-item">
+                <span class="metric-val">7×</span>
+                <span class="metric-sub">Dean's List Recipient</span>
+            </div>
         </div>
-        <div class="metric-item">
-            <span class="metric-val">7×</span>
-            <span class="metric-sub">Dean's List Recipient</span>
-        </div>
-        <div class="metric-item">
-            <span class="metric-val">Full-Stack</span>
-            <span class="metric-sub">Flutter & Laravel API</span>
-        </div>
-        <div class="metric-item">
-            <span class="metric-val text-emerald">03+</span>
-            <span class="metric-sub">Shipped Systems</span>
+
+        <!-- Academic Image / Evidence Container Directly Below -->
+        <div class="academic-proof-card">
+            <div class="proof-header">
+                <div class="proof-meta">
+                    <span class="proof-badge">UMS • SOFTWARE ENGINEERING</span>
+                    <h3 class="proof-title">Academic Record & Dean's List Distinctions</h3>
+                </div>
+                <span class="proof-tag">Verified Distinctions</span>
+            </div>
+
+            <!-- Drop your image into /public/academics.png or update the src here -->
+            <div class="proof-image-wrapper">
+                <img 
+                    src="/academics.png" 
+                    alt="Teo Jun Cheng Academic Honors & Dean's List Transcript" 
+                    class="proof-img"
+                    onerror="this.parentElement.classList.add('img-placeholder');"
+                />
+            </div>
         </div>
     </section>
 
     <!-- 3. WORK EXPERIENCE -->
     <section class="section-container">
-        <div class="section-tag">02 // ROLES</div>
+        <div class="section-tag">03 // ROLES</div>
         <h2 class="section-heading">Work Experience</h2>
 
         <div class="experience-stack">
@@ -79,7 +98,7 @@ import Layout from '../layouts/Layout.astro';
 
     <!-- 4. EMBEDDED CURRICULUM VITAE -->
     <section class="section-container" style="margin-bottom: 6rem;">
-        <div class="section-tag">03 // RESUME</div>
+        <div class="section-tag">04 // RESUME</div>
         <h2 class="section-heading">Curriculum Vitae</h2>
 
         <div class="pdf-viewer-card">
@@ -180,19 +199,19 @@ import Layout from '../layouts/Layout.astro';
         color: #ffffff;
     }
 
-    /* Metric Bar */
-    .career-metrics {
+    /* Duo Metrics */
+    .career-metrics-duo {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         gap: 1.25rem;
-        margin: 2.5rem 0 5rem;
+        margin-bottom: 1.5rem;
     }
 
     .metric-item {
         background-color: #0c1222;
         border: 1px solid #1e293b;
         border-radius: 8px;
-        padding: 1.5rem;
+        padding: 1.5rem 1.75rem;
         display: flex;
         flex-direction: column;
         gap: 0.25rem;
@@ -200,13 +219,13 @@ import Layout from '../layouts/Layout.astro';
 
     .metric-val {
         font-family: 'JetBrains Mono', monospace;
-        font-size: 1.85rem;
+        font-size: 2.2rem;
         font-weight: 800;
         color: #f8fafc;
     }
 
     .metric-sub {
-        font-size: 0.82rem;
+        font-size: 0.85rem;
         color: #64748b;
         text-transform: uppercase;
         letter-spacing: 0.05em;
@@ -214,6 +233,81 @@ import Layout from '../layouts/Layout.astro';
 
     .text-emerald {
         color: #34d399 !important;
+    }
+
+    /* Academic Proof & Image Card */
+    .academic-proof-card {
+        background-color: #0c1222;
+        border: 1px solid #1e293b;
+        border-radius: 8px;
+        padding: 1.75rem;
+        margin-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .proof-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        border-bottom: 1px solid #162032;
+        padding-bottom: 1rem;
+    }
+
+    .proof-badge {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.72rem;
+        color: #10b981;
+        letter-spacing: 0.05em;
+    }
+
+    .proof-title {
+        color: #ffffff;
+        font-size: 1.15rem;
+        font-weight: 700;
+        margin-top: 0.25rem;
+    }
+
+    .proof-tag {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.75rem;
+        color: #38bdf8;
+        background-color: rgba(56, 189, 248, 0.1);
+        border: 1px solid rgba(56, 189, 248, 0.25);
+        padding: 0.25rem 0.65rem;
+        border-radius: 4px;
+    }
+
+    .proof-image-wrapper {
+        width: 100%;
+        max-height: 480px;
+        background-color: #090d16;
+        border: 1px solid #162032;
+        border-radius: 6px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .proof-img {
+        width: 100%;
+        height: auto;
+        max-height: 480px;
+        object-fit: contain;
+        display: block;
+    }
+
+    .img-placeholder::after {
+        content: "Attach credential image to public/academics.png";
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.85rem;
+        color: #64748b;
+        padding: 4rem 1rem;
+        display: block;
     }
 
     /* Section Structure */
