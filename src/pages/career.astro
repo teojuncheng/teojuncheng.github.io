@@ -20,11 +20,11 @@ import Layout from '../layouts/Layout.astro';
     <!-- 2. SUMMARY METRICS BAR -->
     <section class="career-metrics">
         <div class="metric-item">
-            <span class="metric-val text-emerald">3.74</span>
+            <span class="metric-val text-emerald">3.76</span>
             <span class="metric-sub">CGPA (UMS)</span>
         </div>
         <div class="metric-item">
-            <span class="metric-val">6×</span>
+            <span class="metric-val">7×</span>
             <span class="metric-sub">Dean's List Recipient</span>
         </div>
         <div class="metric-item">
@@ -77,47 +77,9 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-    <!-- 4. ACADEMICS & RECOGNITION -->
-    <section class="section-container">
-        <div class="section-tag">03 // ACADEMICS</div>
-        <h2 class="section-heading">Education & Honors</h2>
-
-        <div class="academics-grid">
-            <div class="academic-card">
-                <div class="academic-top">
-                    <span class="period-pill">2022 – 2026</span>
-                    <span class="honor-tag">HONORS</span>
-                </div>
-                <h3 class="degree-title">Bachelor of Computer Science (Software Engineering)</h3>
-                <div class="school-name">Universiti Malaysia Sabah (UMS)</div>
-                <p class="academic-body">
-                    Maintained high academic standing with a cumulative CGPA of <strong>3.74</strong>. Specialized in software architecture, distributed applications, and data algorithms.
-                </p>
-                <div class="academic-status">
-                    <span class="status-dot"></span> 6× Dean's List Award Recipient
-                </div>
-            </div>
-
-            <div class="academic-card">
-                <div class="academic-top">
-                    <span class="period-pill">2025</span>
-                    <span class="honor-tag">COMPETITION</span>
-                </div>
-                <h3 class="degree-title">UM Hackathon Participant</h3>
-                <div class="school-name">Universiti Malaya</div>
-                <p class="academic-body">
-                    Built an end-to-end AI sales recommendation assistant prototype analyzing customer behavioural signals for automated upselling workflows.
-                </p>
-                <div class="academic-status">
-                    <span class="status-dot"></span> Machine Learning Prototype Track
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. EMBEDDED CURRICULUM VITAE -->
+    <!-- 4. EMBEDDED CURRICULUM VITAE -->
     <section class="section-container" style="margin-bottom: 6rem;">
-        <div class="section-tag">04 // RESUME</div>
+        <div class="section-tag">03 // RESUME</div>
         <h2 class="section-heading">Curriculum Vitae</h2>
 
         <div class="pdf-viewer-card">
@@ -208,7 +170,7 @@ import Layout from '../layouts/Layout.astro';
     }
 
     .btn-ghost {
-        background-color: #0c1222;
+        background-color: #0f172a;
         color: #cbd5e1;
         border: 1px solid #1e293b;
     }
@@ -370,79 +332,6 @@ import Layout from '../layouts/Layout.astro';
     .tag-featured {
         border-color: rgba(16, 185, 129, 0.35);
         color: #34d399;
-    }
-
-    /* Academics Grid */
-    .academics-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 1.5rem;
-    }
-
-    .academic-card {
-        background-color: #0c1222;
-        border: 1px solid #1e293b;
-        border-radius: 8px;
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 1.25rem;
-    }
-
-    .academic-top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .period-pill {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.78rem;
-        color: #10b981;
-    }
-
-    .honor-tag {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.7rem;
-        background-color: #162032;
-        color: #64748b;
-        padding: 0.2rem 0.5rem;
-        border-radius: 4px;
-    }
-
-    .degree-title {
-        color: #ffffff;
-        font-size: 1.2rem;
-        font-weight: 700;
-        line-height: 1.4;
-    }
-
-    .school-name {
-        color: #94a3b8;
-        font-size: 0.9rem;
-    }
-
-    .academic-body {
-        color: #94a3b8;
-        font-size: 0.92rem;
-        line-height: 1.6;
-    }
-
-    .academic-status {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-size: 0.85rem;
-        color: #34d399;
-        font-weight: 600;
-    }
-
-    .status-dot {
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background-color: #34d399;
     }
 
     /* PDF Viewer */
