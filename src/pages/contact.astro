@@ -11,12 +11,6 @@ import Layout from '../layouts/Layout.astro';
         <p class="hero-intro">
             Whether evaluating my profile for full-time engineering roles, technical consultations, or project collaborations — reach out via any channel below.
         </p>
-        
-        <!-- Live Status Bar -->
-        <div class="availability-indicator">
-            <span class="pulse-emerald"></span>
-            <span>AVAILABLE FOR FULL-TIME HIRE (STARTING SEPT 2026)</span>
-        </div>
     </header>
 
     <!-- 2. DIRECT ACCESS CHANNELS -->
@@ -134,36 +128,6 @@ import Layout from '../layouts/Layout.astro';
         font-size: 1.15rem;
         line-height: 1.7;
         margin-bottom: 2rem;
-    }
-
-    /* Availability Indicator */
-    .availability-indicator {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.65rem;
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.8rem;
-        letter-spacing: 0.06em;
-        background-color: rgba(16, 185, 129, 0.1);
-        color: #34d399;
-        border: 1px solid rgba(16, 185, 129, 0.3);
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
-    }
-
-    .pulse-emerald {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: #10b981;
-        box-shadow: 0 0 10px #10b981;
-        animation: beacon 2s infinite ease-in-out;
-    }
-
-    @keyframes beacon {
-        0% { opacity: 1; transform: scale(1); }
-        50% { opacity: 0.35; transform: scale(0.85); }
-        100% { opacity: 1; transform: scale(1); }
     }
 
     /* Section Structure */
