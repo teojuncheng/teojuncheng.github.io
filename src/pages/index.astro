@@ -4,12 +4,12 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Teo Jun Cheng | Software Engineer">
 
-    <!-- 1. SPLIT HERO SECTION WITH TERMINAL CARD -->
+    <!-- 1. SPLIT HERO SECTION WITH ABOUT ME DOSSIER CARD -->
     <section class="hero-split">
         <div class="hero-intro">
             <h1 class="hero-headline">Engineering robust systems from <span class="gradient-text">backend to client</span>.</h1>
             <p class="hero-bio">
-                I'm <strong>Teo Jun Cheng</strong>, a full-stack software engineer focused on building decoupled APIs, scalable mobile applications, and resilient digital architectures.
+                I'm <strong>Teo Jun Cheng</strong>, a full-stack software engineer focused on building decoupled APIs, scalable mobile applications, and resilient financial & digital architectures.
             </p>
             <div class="cta-row">
                 <a href="/projects" class="btn btn-emerald">Explore Projects →</a>
@@ -17,26 +17,42 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </div>
 
-        <!-- Terminal Diagnostic Box -->
-        <div class="console-box">
-            <div class="console-top">
-                <div class="window-controls">
-                    <span class="win-dot close"></span>
-                    <span class="win-dot minimize"></span>
-                    <span class="win-dot maximize"></span>
+        <!-- About Me Dossier Card -->
+        <div class="about-card">
+            <div class="about-card-header">
+                <div class="card-title-group">
+                    <span class="card-icon">⚡</span>
+                    <span class="card-heading-text">About Me</span>
                 </div>
-                <span class="console-title">env_profile.sh</span>
+                <span class="card-status-pill">AVAILABLE</span>
             </div>
-            <div class="console-content">
-                <p><span class="prompt">$</span> whoami</p>
-                <p class="console-res">teo_jun_cheng --role "Software Engineer"</p>
-                <p><span class="prompt">$</span> contact --email</p>
-                <p class="console-res">teojuncheng11@gmail.com</p>
-                <p><span class="prompt">$</span> contact --phone</p>
-                <p class="console-res text-emerald">+6016-8449036</p>
-                <p><span class="prompt">$</span> locate</p>
-                <p class="console-res">Kuala Lumpur / Kota Kinabalu, MY</p>
-            </div>
+            
+            <ul class="about-points">
+                <li>
+                    <span class="point-emoji">🎓</span>
+                    <span><strong>Software Engineering graduate</strong> from Universiti Malaysia Sabah (3.76 CGPA • 7× Dean's List).</span>
+                </li>
+                <li>
+                    <span class="point-emoji">🚀</span>
+                    <span><strong>Full-Stack & Mobile Engineer</strong> specialized in decoupled REST APIs and cross-platform clients.</span>
+                </li>
+                <li>
+                    <span class="point-emoji">📈</span>
+                    <span><strong>Targeting the Fintech space</strong>, actively building quantitative screening tools and computational backends.</span>
+                </li>
+                <li>
+                    <span class="point-emoji">🛠️</span>
+                    <span><strong>Production-tested</strong> with Flutter, Dart, and Laravel API integration during industry internship.</span>
+                </li>
+                <li>
+                    <span class="point-emoji">🔍</span>
+                    <span><strong>Systematic thinker</strong> focused on modular architectures and relational schema integrity (MySQL/PostgreSQL).</span>
+                </li>
+                <li>
+                    <span class="point-emoji">💼</span>
+                    <span><strong>Open to full-time roles</strong> and high-impact technical collaborations.</span>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -59,7 +75,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-    <!-- 3. TECHNICAL CAPABILITIES / SKILLS (SAMPLE GRID LAYOUT) -->
+    <!-- 3. TECHNICAL CAPABILITIES / SKILLS -->
     <section class="section-container">
         <div class="section-tag">02 // DOMAIN EXPERTISE</div>
         <h2 class="section-title">Skills & Capabilities</h2>
@@ -194,16 +210,16 @@ import Layout from '../layouts/Layout.astro';
     /* Split Hero */
     .hero-split {
         display: grid;
-        grid-template-columns: 1.25fr 1fr;
+        grid-template-columns: 1.15fr 1fr;
         gap: 3rem;
         align-items: center;
         padding: 5rem 0 4rem;
     }
 
-    @media (max-width: 860px) {
+    @media (max-width: 900px) {
         .hero-split {
             grid-template-columns: 1fr;
-            gap: 2rem;
+            gap: 2.5rem;
             padding: 3rem 0;
         }
     }
@@ -274,69 +290,87 @@ import Layout from '../layouts/Layout.astro';
         color: #ffffff;
     }
 
-    /* Console Card */
-    .console-box {
+    /* About Me Dossier Card */
+    .about-card {
         background-color: #090d16;
         border: 1px solid #1e293b;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    }
-
-    .console-top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #0f172a;
-        padding: 0.65rem 1rem;
-        border-bottom: 1px solid #1e293b;
-    }
-
-    .window-controls {
-        display: flex;
-        gap: 6px;
-    }
-
-    .win-dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-    }
-
-    .close { background-color: #ef4444; }
-    .minimize { background-color: #f59e0b; }
-    .maximize { background-color: #10b981; }
-
-    .console-title {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.75rem;
-        color: #64748b;
-    }
-
-    .console-content {
-        padding: 1.25rem;
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.84rem;
-        color: #cbd5e1;
+        border-radius: 10px;
+        padding: 1.75rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
         display: flex;
         flex-direction: column;
+        gap: 1.25rem;
+        transition: border-color 0.2s ease;
+    }
+
+    .about-card:hover {
+        border-color: rgba(16, 185, 129, 0.5);
+    }
+
+    .about-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #162032;
+        padding-bottom: 1rem;
+    }
+
+    .card-title-group {
+        display: flex;
+        align-items: center;
         gap: 0.5rem;
     }
 
-    .prompt {
+    .card-icon {
         color: #10b981;
-        font-weight: bold;
+        font-size: 1rem;
     }
 
-    .console-res {
+    .card-heading-text {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #ffffff;
+        letter-spacing: -0.01em;
+    }
+
+    .card-status-pill {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.7rem;
+        letter-spacing: 0.08em;
+        background-color: rgba(16, 185, 129, 0.1);
+        color: #34d399;
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        padding: 0.2rem 0.55rem;
+        border-radius: 4px;
+        font-weight: 600;
+    }
+
+    .about-points {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.85rem;
+    }
+
+    .about-points li {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
         color: #94a3b8;
-        padding-left: 0.85rem;
-        border-left: 2px solid #1e293b;
-        margin-bottom: 0.4rem;
+        font-size: 0.88rem;
+        line-height: 1.55;
     }
 
-    .text-emerald {
-        color: #34d399 !important;
+    .about-points li strong {
+        color: #f1f5f9;
+    }
+
+    .point-emoji {
+        font-size: 1rem;
+        line-height: 1.4;
+        flex-shrink: 0;
     }
 
     /* Section Layout */
@@ -409,7 +443,7 @@ import Layout from '../layouts/Layout.astro';
         border: 1px solid #223249;
     }
 
-    /* Skills Grid Layout */
+    /* Skills Grid */
     .skills-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
